@@ -36,11 +36,11 @@ export const getThemeSettings = (): Record<string, UiSettingsParams> => {
   return {
     'theme:darkMode': {
       name: i18n.translate('core.ui_settings.params.darkModeTitle', {
-        defaultMessage: 'Dark mode',
+        defaultMessage: 'Chế độ tối',
       }),
       value: false,
       description: i18n.translate('core.ui_settings.params.darkModeText', {
-        defaultMessage: `Enable a dark mode for the OpenSearch Dashboards UI. A page refresh is required for the setting to be applied.`,
+        defaultMessage: `Bật chế độ tối cho giao diện người dùng Bảng điều khiển OpenSearch. Cần phải làm mới trang để áp dụng cài đặt.`,
       }),
       requiresPageReload: true,
       category: ['appearance'],
@@ -48,13 +48,13 @@ export const getThemeSettings = (): Record<string, UiSettingsParams> => {
     },
     'theme:version': {
       name: i18n.translate('core.ui_settings.params.themeVersionTitle', {
-        defaultMessage: 'Theme version',
+        defaultMessage: 'Phiên bản chủ đề',
       }),
       value: 'Next (preview)',
       type: 'select',
       options: ['v7', 'Next (preview)'],
       description: i18n.translate('core.ui_settings.params.themeVersionText', {
-        defaultMessage: `<p>Switch between the themes used for the current and next versions of OpenSearch Dashboards. A page refresh is required for the setting to be applied.</p><p><a href="{href}">{linkText}</a></p>`,
+        defaultMessage: `<p>Chuyển đổi giữa chủ đề được sử dụng cho phiên bản hiện tại và phiên bản tiếp theo của Bảng thông tin OpenSearch. Cần phải làm mới trang để áp dụng cài đặt.</p><p><a href="{href}">{linkText}</a></p>`,
         values: {
           href: 'https://forum.opensearch.org/t/feedback-on-dark-mode-experience/15725',
           linkText: 'Theme feedback',

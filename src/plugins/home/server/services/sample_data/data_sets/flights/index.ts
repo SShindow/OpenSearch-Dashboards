@@ -36,10 +36,10 @@ import { SampleDatasetSchema, AppLinkSchema } from '../../lib/sample_dataset_reg
 import { getSavedObjectsWithDataSource, appendDataSourceId } from '../util';
 
 const flightsName = i18n.translate('home.sampleData.flightsSpecTitle', {
-  defaultMessage: 'Sample flight data',
+  defaultMessage: 'Dữ liệu chuyến bay mẫu',
 });
 const flightsDescription = i18n.translate('home.sampleData.flightsSpecDescription', {
-  defaultMessage: 'Sample data, visualizations, and dashboards for monitoring flight routes.',
+  defaultMessage: 'Dữ liệu mẫu, hình ảnh trực quan và bảng điều khiển để theo dõi đường bay.',
 });
 const initialAppLinks = [] as AppLinkSchema[];
 

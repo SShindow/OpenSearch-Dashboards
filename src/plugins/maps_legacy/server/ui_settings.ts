@@ -36,14 +36,14 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
   return {
     'visualization:tileMap:maxPrecision': {
       name: i18n.translate('maps_legacy.advancedSettings.visualization.tileMap.maxPrecisionTitle', {
-        defaultMessage: 'Maximum tile map precision',
+        defaultMessage: 'Độ chính xác của bản đồ ô xếp tối đa',
       }),
       value: 7,
       description: i18n.translate(
         'maps_legacy.advancedSettings.visualization.tileMap.maxPrecisionText',
         {
           defaultMessage:
-            'The maximum geoHash precision displayed on tile maps: 7 is high, 10 is very high, 12 is the max. {cellDimensionsLink}',
+            'Độ chính xác GeoHash tối đa được hiển thị trên bản đồ ô xếp: 7 là cao, 10 là rất cao, 12 là tối đa. {cellDimensionsLink}',
           description:
             'Part of composite text: maps_legacy.advancedSettings.visualization.tileMap.maxPrecisionText + ' +
             'maps_legacy.advancedSettings.visualization.tileMap.maxPrecision.cellDimensionsLinkText',
@@ -54,7 +54,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
               i18n.translate(
                 'maps_legacy.advancedSettings.visualization.tileMap.maxPrecision.cellDimensionsLinkText',
                 {
-                  defaultMessage: 'Explanation of cell dimensions',
+                  defaultMessage: 'Giải thích kích thước ô',
                 }
               ) +
               '</a>',
@@ -66,7 +66,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
     },
     'visualization:tileMap:WMSdefaults': {
       name: i18n.translate('maps_legacy.advancedSettings.visualization.tileMap.wmsDefaultsTitle', {
-        defaultMessage: 'Default WMS properties',
+        defaultMessage: 'Thuộc tính WMS mặc định',
       }),
       value: JSON.stringify(
         {
@@ -89,7 +89,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
         'maps_legacy.advancedSettings.visualization.tileMap.wmsDefaultsText',
         {
           defaultMessage:
-            'Default {propertiesLink} for the WMS map server support in the coordinate map',
+            '{propertiesLink} mặc định để hỗ trợ máy chủ bản đồ WMS trong bản đồ tọa độ',
           description:
             'Part of composite text: maps_legacy.advancedSettings.visualization.tileMap.wmsDefaultsText + ' +
             'maps_legacy.advancedSettings.visualization.tileMap.wmsDefaults.propertiesLinkText',
@@ -99,7 +99,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
               i18n.translate(
                 'maps_legacy.advancedSettings.visualization.tileMap.wmsDefaults.propertiesLinkText',
                 {
-                  defaultMessage: 'properties',
+                  defaultMessage: 'tính chất',
                 }
               ) +
               '</a>',

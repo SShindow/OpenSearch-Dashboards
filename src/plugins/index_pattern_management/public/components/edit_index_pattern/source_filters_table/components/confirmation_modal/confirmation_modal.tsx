@@ -52,7 +52,7 @@ export const DeleteFilterConfirmationModal = ({
       title={
         <FormattedMessage
           id="indexPatternManagement.editIndexPattern.source.deleteSourceFilterLabel"
-          defaultMessage="Delete source filter '{value}'?"
+          defaultMessage="Xóa bộ lọc nguồn '{value}'?"
           values={{
             value: filterToDeleteValue,
           }}
@@ -70,7 +70,7 @@ export const DeleteFilterConfirmationModal = ({
       confirmButtonText={
         <FormattedMessage
           id="indexPatternManagement.editIndexPattern.source.deleteFilter.deleteButtonLabel"
-          defaultMessage="Delete"
+          defaultMessage="Xóa"
         />
       }
       defaultFocusedButton={EUI_MODAL_CONFIRM_BUTTON}

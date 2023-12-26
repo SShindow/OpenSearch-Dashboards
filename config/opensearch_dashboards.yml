@@ -4,7 +4,7 @@
 # Specifies the address to which the OpenSearch Dashboards server will bind. IP addresses and host names are both valid values.
 # The default is 'localhost', which usually means remote machines will not be able to connect.
 # To allow connections from remote users, set this parameter to a non-loopback address.
-#server.host: "localhost"
+server.host: "10.11.9.5"
 
 # Enables you to specify a path to mount OpenSearch Dashboards at if you are running behind a proxy.
 # Use the `server.rewriteBasePath` setting to tell OpenSearch Dashboards if it should remove the basePath
@@ -140,7 +140,7 @@
 
 # Specifies locale to be used for all localizable strings, dates and number formats.
 # Supported languages are the following: English - en , by default , Chinese - zh-CN .
-#i18n.locale: "en"
+i18n.locale: "vi"
 
 # Set the allowlist to check input graphite Url. Allowlist is the default check list.
 #vis_type_timeline.graphiteAllowedUrls: ['https://www.hostedgraphite.com/UID/ACCESS_KEY/graphite']
@@ -208,18 +208,18 @@
 #  'ff00::/8',
 # ]
 
-# opensearchDashboards.branding:
-#   logo:
-#     defaultUrl: ""
-#     darkModeUrl: ""
-#   mark:
-#     defaultUrl: ""
-#     darkModeUrl: ""
-#   loadingLogo:
-#     defaultUrl: ""
-#     darkModeUrl: ""
+opensearchDashboards.branding:
+  logo:
+    defaultUrl: "https://i.imgur.com/6FSOZra_d.webp?maxwidth=760&fidelity=grand.png"
+    darkModeUrl: "https://i.imgur.com/6FSOZra_d.webp?maxwidth=760&fidelity=grand.png"
+  mark:
+    defaultUrl: "https://i.imgur.com/ymE5iKw.png"
+    darkModeUrl: "https://i.imgur.com/ymE5iKw.png"
+  # loadingLogo:
+  #   defaultUrl: "https://10.11.9.5:5601/ui/assets/ExxaData_logo.png"
+  #   darkModeUrl: "https://10.11.9.5:5601/ui/assets/ExxaData_logo.png"
 #   faviconUrl: ""
-#   applicationTitle: ""
+  applicationTitle: "Exxa Data"
 #   useExpandedHeader: false
 
 # Set the value of this setting to true to capture region denied warnings and errors

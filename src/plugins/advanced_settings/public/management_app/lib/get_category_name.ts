@@ -45,8 +45,8 @@ const names: Record<string, string> = {
   notifications: i18n.translate('advancedSettings.categoryNames.notificationsLabel', {
     defaultMessage: 'Notifications',
   }),
-  visualizations: i18n.translate('advancedSettings.categoryNames.visualizationsLabel', {
-    defaultMessage: 'Visualizations',
+  visualization: i18n.translate('advancedSettings.categoryNames.visualizationsLabel', {
+    defaultMessage: 'Visualization',
   }),
   discover: i18n.translate('advancedSettings.categoryNames.discoverLabel', {
     defaultMessage: 'Discover',

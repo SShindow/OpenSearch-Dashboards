@@ -11,7 +11,7 @@ export function getLandingBreadcrumbs() {
   return [
     {
       text: i18n.translate('dashboard.dashboardAppBreadcrumbsTitle', {
-        defaultMessage: 'Dashboards',
+        defaultMessage: 'Trang tổng quan',
       }),
       href: `#${DashboardConstants.LANDING_PAGE_PATH}`,
     },

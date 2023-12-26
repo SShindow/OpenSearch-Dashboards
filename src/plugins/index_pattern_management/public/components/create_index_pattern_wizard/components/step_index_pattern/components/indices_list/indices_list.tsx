@@ -119,7 +119,7 @@ export class IndicesList extends React.Component<IndicesListProps, IndicesListSt
       >
         <FormattedMessage
           id="indexPatternManagement.createIndexPattern.step.pagingLabel"
-          defaultMessage="Rows per page: {perPage}"
+          defaultMessage="Hàng trên mỗi trang: {perPage}"
           values={{ perPage }}
         />
       </EuiButtonEmpty>

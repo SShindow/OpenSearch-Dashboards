@@ -142,30 +142,30 @@ export const getEuiContextMapping = () => {
           'Screen reader text to describe the composite behavior of the color stops component.',
       }),
     'euiColumnSelector.hideAll': i18n.translate('core.euiColumnSelector.hideAll', {
-      defaultMessage: 'Hide all',
+      defaultMessage: 'Giấu tất cả',
     }),
     'euiColumnSelector.selectAll': i18n.translate('core.euiColumnSelector.selectAll', {
-      defaultMessage: 'Show all',
+      defaultMessage: 'Hiển thị tất cả',
     }),
     'euiColumnSorting.clearAll': i18n.translate('core.euiColumnSorting.clearAll', {
-      defaultMessage: 'Clear sorting',
+      defaultMessage: 'Bỏ sắp xếp',
     }),
     'euiColumnSorting.emptySorting': i18n.translate('core.euiColumnSorting.emptySorting', {
-      defaultMessage: 'Currently no fields are sorted',
+      defaultMessage: 'Hiện tại không có mục nào được sắp xếp',
     }),
     'euiColumnSorting.pickFields': i18n.translate('core.euiColumnSorting.pickFields', {
-      defaultMessage: 'Pick fields to sort by',
+      defaultMessage: 'Chọn mục để sắp xếp',
     }),
     'euiColumnSorting.sortFieldAriaLabel': i18n.translate(
       'core.euiColumnSorting.sortFieldAriaLabel',
       {
-        defaultMessage: 'Sort by:',
+        defaultMessage: 'Sắp xếp bởi:',
       }
     ),
     'euiColumnSortingDraggable.activeSortLabel': i18n.translate(
       'core.euiColumnSortingDraggable.activeSortLabel',
       {
-        defaultMessage: 'is sorting this data grid',
+        defaultMessage: 'đang sắp xếp lưới dữ liệu này',
       }
     ),
     'euiColumnSortingDraggable.defaultSortAsc': i18n.translate(
@@ -185,25 +185,25 @@ export const getEuiContextMapping = () => {
     'euiColumnSortingDraggable.removeSortLabel': i18n.translate(
       'core.euiColumnSortingDraggable.removeSortLabel',
       {
-        defaultMessage: 'Remove from data grid sort:',
+        defaultMessage: 'Xóa khỏi sắp xếp lưới dữ liệu:',
       }
     ),
     'euiColumnSortingDraggable.toggleLegend': i18n.translate(
       'core.euiColumnSortingDraggable.toggleLegend',
       {
-        defaultMessage: 'Select sorting method for field:',
+        defaultMessage: 'Chọn phương pháp sắp xếp cho trường:',
       }
     ),
     'euiComboBoxOptionsList.allOptionsSelected': i18n.translate(
       'core.euiComboBoxOptionsList.allOptionsSelected',
       {
-        defaultMessage: "You've selected all available options",
+        defaultMessage: "Bạn đã chọn tất cả các tùy chọn có sẵn",
       }
     ),
     'euiComboBoxOptionsList.alreadyAdded': ({ label }: EuiValues) => (
       <FormattedMessage
         id="core.euiComboBoxOptionsList.alreadyAdded"
-        defaultMessage="{label} has already been added"
+        defaultMessage="{label} đã được thêm"
         values={{ label }}
       />
     ),
@@ -241,7 +241,7 @@ export const getEuiContextMapping = () => {
         description: 'ARIA label, `children` is the human-friendly value of an option',
       }),
     'euiCommonlyUsedTimeRanges.legend': i18n.translate('core.euiCommonlyUsedTimeRanges.legend', {
-      defaultMessage: 'Commonly used',
+      defaultMessage: 'Thường được sử dụng',
     }),
     'euiDataGrid.screenReaderNotice': i18n.translate('core.euiDataGrid.screenReaderNotice', {
       defaultMessage: 'Cell contains interactive content.',
@@ -415,13 +415,13 @@ export const getEuiContextMapping = () => {
         values: { optionValue, optionText },
       }),
     'euiRefreshInterval.legend': i18n.translate('core.euiRefreshInterval.legend', {
-      defaultMessage: 'Refresh every',
+      defaultMessage: 'Làm mới mỗi',
     }),
     'euiRefreshInterval.start': i18n.translate('core.euiRefreshInterval.start', {
-      defaultMessage: 'Start',
+      defaultMessage: 'Bắt đầu',
     }),
     'euiRefreshInterval.stop': i18n.translate('core.euiRefreshInterval.stop', {
-      defaultMessage: 'Stop',
+      defaultMessage: 'Dừng lại',
     }),
     'euiRelativeTab.fullDescription': ({ unit }: EuiValues) =>
       i18n.translate('core.euiRelativeTab.fullDescription', {
@@ -508,7 +508,7 @@ export const getEuiContextMapping = () => {
     'euiSuperDatePicker.showDatesButtonLabel': i18n.translate(
       'core.euiSuperDatePicker.showDatesButtonLabel',
       {
-        defaultMessage: 'Show dates',
+        defaultMessage: 'Hiển thị ngày',
         description: 'Displayed in a button that shows date picker',
       }
     ),
@@ -540,7 +540,7 @@ export const getEuiContextMapping = () => {
     'euiSuperUpdateButton.refreshButtonLabel': i18n.translate(
       'core.euiSuperUpdateButton.refreshButtonLabel',
       {
-        defaultMessage: 'Refresh',
+        defaultMessage: 'Làm mới',
         description: 'Displayed in a button that refreshes based on date picked',
       }
     ),
@@ -559,7 +559,7 @@ export const getEuiContextMapping = () => {
       }
     ),
     'euiTablePagination.rowsPerPage': i18n.translate('core.euiTablePagination.rowsPerPage', {
-      defaultMessage: 'Rows per page',
+      defaultMessage: 'Số hàng mỗi trang',
       description: 'Displayed in a button that toggles a table pagination menu',
     }),
     'euiTablePagination.rowsPerPageOption': ({ rowsPerPage }: EuiValues) =>

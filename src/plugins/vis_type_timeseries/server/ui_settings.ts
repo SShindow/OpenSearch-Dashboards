@@ -38,11 +38,11 @@ import { MAX_BUCKETS_SETTING } from '../common/constants';
 export const uiSettings: Record<string, UiSettingsParams> = {
   [MAX_BUCKETS_SETTING]: {
     name: i18n.translate('visTypeTimeseries.advancedSettings.maxBucketsTitle', {
-      defaultMessage: 'Maximum buckets',
+      defaultMessage: 'Nhóm tối đa',
     }),
     value: 2000,
     description: i18n.translate('visTypeTimeseries.advancedSettings.maxBucketsText', {
-      defaultMessage: 'The maximum number of buckets a single datasource can return',
+      defaultMessage: 'Số lượng nhóm tối đa mà một nguồn dữ liệu có thể trả về',
     }),
     schema: schema.number(),
   },

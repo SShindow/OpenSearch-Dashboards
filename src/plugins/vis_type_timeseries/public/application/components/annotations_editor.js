@@ -313,7 +313,7 @@ export class AnnotationsEditor extends Component {
           <EuiButton fill onClick={handleAdd}>
             <FormattedMessage
               id="visTypeTimeseries.annotationsEditor.addDataSourceButtonLabel"
-              defaultMessage="Add data source"
+              defaultMessage="Thêm nguồn dữ liệu"
             />
           </EuiButton>
         </EuiText>

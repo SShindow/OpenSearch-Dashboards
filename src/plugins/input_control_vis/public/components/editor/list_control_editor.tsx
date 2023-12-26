@@ -170,7 +170,7 @@ export class ListControlEditor extends PureComponent<
           helpText={
             <FormattedMessage
               id="inputControl.editor.listControl.parentDescription"
-              defaultMessage="Options are based on the value of parent control. Disabled if parent is not set."
+              defaultMessage="Các tùy chọn dựa trên giá trị của quyền kiểm soát của phụ huynh. Bị tắt nếu cha mẹ không được đặt."
             />
           }
           key="parentSelect"

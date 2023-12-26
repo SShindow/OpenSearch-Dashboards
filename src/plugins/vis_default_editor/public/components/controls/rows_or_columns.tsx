@@ -48,13 +48,13 @@ function RowsOrColumnsControl({ editorStateParams, setStateParamValue }: AggCont
     {
       id: PARAMS.ROWS,
       label: i18n.translate('visDefaultEditor.controls.rowsLabel', {
-        defaultMessage: 'Rows',
+        defaultMessage: 'Hàng',
       }),
     },
     {
       id: PARAMS.COLUMNS,
       label: i18n.translate('visDefaultEditor.controls.columnsLabel', {
-        defaultMessage: 'Columns',
+        defaultMessage: 'Cột',
       }),
     },
   ];

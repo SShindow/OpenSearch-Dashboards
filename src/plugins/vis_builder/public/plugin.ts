@@ -185,7 +185,7 @@ export class VisBuilderPlugin
       name: PLUGIN_ID,
       title: PLUGIN_NAME,
       description: i18n.translate('visBuilder.visPicker.description', {
-        defaultMessage: 'Create visualizations using the new VisBuilder',
+        defaultMessage: 'Tạo trực quan bằng VisBuilder mới',
       }),
       icon: 'visBuilder',
       stage: 'experimental',

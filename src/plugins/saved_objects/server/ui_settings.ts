@@ -42,23 +42,23 @@ import {
 export const uiSettings: Record<string, UiSettingsParams> = {
   [PER_PAGE_SETTING]: {
     name: i18n.translate('savedObjects.advancedSettings.perPageTitle', {
-      defaultMessage: 'Objects per page',
+      defaultMessage: 'Đối tượng trên mỗi trang',
     }),
     value: PER_PAGE_VALUE,
     type: 'number',
     description: i18n.translate('savedObjects.advancedSettings.perPageText', {
-      defaultMessage: 'Number of objects to show per page in the load dialog',
+      defaultMessage: 'Số lượng đối tượng hiển thị trên mỗi trang trong hộp thoại tải',
     }),
     schema: schema.number(),
   },
   [LISTING_LIMIT_SETTING]: {
     name: i18n.translate('savedObjects.advancedSettings.listingLimitTitle', {
-      defaultMessage: 'Objects listing limit',
+      defaultMessage: 'Giới hạn danh sách đối tượng',
     }),
     type: 'number',
     value: LISTING_LIMIT_VALUE,
     description: i18n.translate('savedObjects.advancedSettings.listingLimitText', {
-      defaultMessage: 'Number of objects to fetch for the listing pages',
+      defaultMessage: 'Số lượng đối tượng cần tìm nạp cho các trang danh sách',
     }),
     schema: schema.number(),
   },

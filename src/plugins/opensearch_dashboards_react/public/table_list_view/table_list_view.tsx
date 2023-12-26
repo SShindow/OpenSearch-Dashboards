@@ -240,14 +240,14 @@ class TableListView extends React.Component<TableListViewProps, TableListViewSta
     let deleteButton = (
       <FormattedMessage
         id="opensearch-dashboards-react.tableListView.listing.deleteSelectedItemsConfirmModal.confirmButtonLabel"
-        defaultMessage="Delete"
+        defaultMessage="Xóa"
       />
     );
     if (this.state.isDeletingItems) {
       deleteButton = (
         <FormattedMessage
           id="opensearch-dashboards-react.tableListView.listing.deleteSelectedItemsConfirmModal.confirmButtonLabelDeleting"
-          defaultMessage="Deleting"
+          defaultMessage="Đang xóa"
         />
       );
     }
@@ -257,7 +257,7 @@ class TableListView extends React.Component<TableListViewProps, TableListViewSta
         title={
           <FormattedMessage
             id="opensearch-dashboards-react.tableListView.listing.deleteSelectedConfirmModal.title"
-            defaultMessage="Delete {itemCount} {entityName}?"
+            defaultMessage="Xóa {itemCount} {entityName}?"
             values={{
               itemCount: this.state.selectedIds.length,
               entityName:
@@ -397,7 +397,7 @@ class TableListView extends React.Component<TableListViewProps, TableListViewSta
       >
         <FormattedMessage
           id="opensearch-dashboards-react.tableListView.listing.deleteButtonMessage"
-          defaultMessage="Delete {itemCount} {entityName}"
+          defaultMessage="Xóa {itemCount} {entityName}"
           values={{
             itemCount: selection.length,
             entityName:
@@ -507,7 +507,7 @@ class TableListView extends React.Component<TableListViewProps, TableListViewSta
         >
           <FormattedMessage
             id="opensearch-dashboards-react.tableListView.listing.createNewItemButtonLabel"
-            defaultMessage="Create {entityName}"
+            defaultMessage="Tạo {entityName}"
             values={{ entityName: this.props.entityName }}
           />
         </EuiButton>

@@ -36,10 +36,10 @@ import { SampleDatasetSchema, AppLinkSchema } from '../../lib/sample_dataset_reg
 import { getSavedObjectsWithDataSource, appendDataSourceId } from '../util';
 
 const ecommerceName = i18n.translate('home.sampleData.ecommerceSpecTitle', {
-  defaultMessage: 'Sample eCommerce orders',
+  defaultMessage: 'Mẫu đơn đặt hàng thương mại điện tử',
 });
 const ecommerceDescription = i18n.translate('home.sampleData.ecommerceSpecDescription', {
-  defaultMessage: 'Sample data, visualizations, and dashboards for tracking eCommerce orders.',
+  defaultMessage: 'Dữ liệu mẫu, hình ảnh trực quan và trang tổng quan để theo dõi đơn đặt hàng Thương mại điện tử.',
 });
 const initialAppLinks = [] as AppLinkSchema[];
 

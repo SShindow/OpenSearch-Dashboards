@@ -65,7 +65,7 @@ export const DiscoverUninitialized = ({ onRefresh }: Props) => {
                 <EuiButton color="primary" fill onClick={onRefresh}>
                   <FormattedMessage
                     id="discover.uninitializedRefreshButtonText"
-                    defaultMessage="Refresh data"
+                    defaultMessage="Làm mới dữ liệu"
                   />
                 </EuiButton>
               }

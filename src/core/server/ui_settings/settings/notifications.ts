@@ -36,13 +36,13 @@ export const getNotificationsSettings = (): Record<string, UiSettingsParams> => 
   return {
     'notifications:banner': {
       name: i18n.translate('core.ui_settings.params.notifications.bannerTitle', {
-        defaultMessage: 'Custom banner notification',
+        defaultMessage: 'Thông báo biểu ngữ tùy chỉnh',
       }),
       value: '',
       type: 'markdown',
       description: i18n.translate('core.ui_settings.params.notifications.bannerText', {
         defaultMessage:
-          'A custom banner intended for temporary notices to all users. {markdownLink}.',
+          'Một biểu ngữ tùy chỉnh dành cho thông báo tạm thời cho tất cả người dùng. {markdownLink}.',
         description:
           'Part of composite text: core.ui_settings.params.notifications.bannerText + ' +
           'core.ui_settings.params.notifications.banner.markdownLinkText',
@@ -51,7 +51,7 @@ export const getNotificationsSettings = (): Record<string, UiSettingsParams> => 
             `<a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/"
             target="_blank" rel="noopener noreferrer">` +
             i18n.translate('core.ui_settings.params.notifications.banner.markdownLinkText', {
-              defaultMessage: 'Markdown supported',
+              defaultMessage: 'Hỗ trợ đánh dấu',
             }) +
             '</a>',
         },
@@ -61,15 +61,15 @@ export const getNotificationsSettings = (): Record<string, UiSettingsParams> => 
     },
     'notifications:lifetime:banner': {
       name: i18n.translate('core.ui_settings.params.notifications.bannerLifetimeTitle', {
-        defaultMessage: 'Banner notification lifetime',
+        defaultMessage: 'Thời gian tồn tại của thông báo biểu ngữ',
       }),
       value: 3000000,
       description: i18n.translate('core.ui_settings.params.notifications.bannerLifetimeText', {
         defaultMessage:
-          'The time in milliseconds which a banner notification will be displayed on-screen for. ' +
-          'Setting to {infinityValue} will disable the countdown.',
+          'Thời gian tính bằng mili giây mà thông báo biểu ngữ sẽ được hiển thị trên màn hình. ' +
+          'Việc đặt thành {infinityValue} sẽ tắt tính năng đếm ngược.',
         values: {
-          infinityValue: 'Infinity',
+          infinityValue: 'Vô hạn',
         },
       }),
       type: 'number',
@@ -78,15 +78,15 @@ export const getNotificationsSettings = (): Record<string, UiSettingsParams> => 
     },
     'notifications:lifetime:error': {
       name: i18n.translate('core.ui_settings.params.notifications.errorLifetimeTitle', {
-        defaultMessage: 'Error notification lifetime',
+        defaultMessage: 'Thời gian tồn tại của thông báo lỗi',
       }),
       value: 300000,
       description: i18n.translate('core.ui_settings.params.notifications.errorLifetimeText', {
         defaultMessage:
-          'The time in milliseconds which an error notification will be displayed on-screen for. ' +
-          'Setting to {infinityValue} will disable.',
+          'Thời gian tính bằng mili giây mà thông báo lỗi sẽ được hiển thị trên màn hình. ' +
+          'Việc đặt thành {infinityValue} sẽ tắt tính năng đếm ngược.',
         values: {
-          infinityValue: 'Infinity',
+          infinityValue: 'Vô hạn',
         },
       }),
       type: 'number',
@@ -95,15 +95,15 @@ export const getNotificationsSettings = (): Record<string, UiSettingsParams> => 
     },
     'notifications:lifetime:warning': {
       name: i18n.translate('core.ui_settings.params.notifications.warningLifetimeTitle', {
-        defaultMessage: 'Warning notification lifetime',
+        defaultMessage: 'Thời gian tồn tại của thông báo cảnh báo',
       }),
       value: 10000,
       description: i18n.translate('core.ui_settings.params.notifications.warningLifetimeText', {
         defaultMessage:
-          'The time in milliseconds which a warning notification will be displayed on-screen for. ' +
-          'Setting to {infinityValue} will disable.',
+          'Thời gian tính bằng mili giây mà thông báo cảnh báo sẽ được hiển thị trên màn hình. ' +
+          'Việc đặt thành {infinityValue} sẽ tắt tính năng đếm ngược.',
         values: {
-          infinityValue: 'Infinity',
+          infinityValue: 'Vô hạn',
         },
       }),
       type: 'number',
@@ -112,15 +112,15 @@ export const getNotificationsSettings = (): Record<string, UiSettingsParams> => 
     },
     'notifications:lifetime:info': {
       name: i18n.translate('core.ui_settings.params.notifications.infoLifetimeTitle', {
-        defaultMessage: 'Info notification lifetime',
+        defaultMessage: '"Thời gian tồn tại của thông báo thông tin',
       }),
       value: 5000,
       description: i18n.translate('core.ui_settings.params.notifications.infoLifetimeText', {
         defaultMessage:
-          'The time in milliseconds which an information notification will be displayed on-screen for. ' +
-          'Setting to {infinityValue} will disable.',
+          'Thời gian tính bằng mili giây mà thông báo thông tin sẽ được hiển thị trên màn hình. ' +
+          'Việc đặt thành {infinityValue} sẽ tắt tính năng đếm ngược.',
         values: {
-          infinityValue: 'Infinity',
+          infinityValue: 'Vô hạn',
         },
       }),
       type: 'number',

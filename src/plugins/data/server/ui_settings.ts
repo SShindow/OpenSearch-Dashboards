@@ -40,18 +40,18 @@ const luceneQueryLanguageLabel = i18n.translate('data.advancedSettings.searchQue
 });
 
 const queryLanguageSettingName = i18n.translate('data.advancedSettings.searchQueryLanguageTitle', {
-  defaultMessage: 'Query language',
+  defaultMessage: 'Ngôn ngữ truy vấn',
 });
 
 const requestPreferenceOptionLabels = {
   sessionId: i18n.translate('data.advancedSettings.courier.requestPreferenceSessionId', {
-    defaultMessage: 'Session ID',
+    defaultMessage: 'Phiên ID',
   }),
   custom: i18n.translate('data.advancedSettings.courier.requestPreferenceCustom', {
-    defaultMessage: 'Custom',
+    defaultMessage: 'Tùy chỉnh',
   }),
   none: i18n.translate('data.advancedSettings.courier.requestPreferenceNone', {
-    defaultMessage: 'None',
+    defaultMessage: 'Không có',
   }),
 };
 
@@ -68,37 +68,37 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
   return {
     [UI_SETTINGS.META_FIELDS]: {
       name: i18n.translate('data.advancedSettings.metaFieldsTitle', {
-        defaultMessage: 'Meta fields',
+        defaultMessage: 'Trường meta',
       }),
       value: ['_source', '_id', '_type', '_index', '_score'],
       description: i18n.translate('data.advancedSettings.metaFieldsText', {
         defaultMessage:
-          'Fields that exist outside of _source to merge into our document when displaying it',
+          'Các trường tồn tại bên ngoài _source để hợp nhất vào tài liệu của chúng tôi khi hiển thị nó',
       }),
       schema: schema.arrayOf(schema.string()),
     },
     [UI_SETTINGS.DOC_HIGHLIGHT]: {
       name: i18n.translate('data.advancedSettings.docTableHighlightTitle', {
-        defaultMessage: 'Highlight results',
+        defaultMessage: 'Làm nổi bật kết quả',
       }),
       value: true,
       description: i18n.translate('data.advancedSettings.docTableHighlightText', {
         defaultMessage:
-          'Highlight results in Discover and Saved Searches Dashboard. ' +
-          'Highlighting makes requests slow when working on big documents.',
+          'Làm nổi bật các kết quả trong Trang tổng quan Khám phá và Tìm kiếm đã lưu. ' +
+          'Việc đánh dấu làm cho các yêu cầu bị chậm khi làm việc trên các tài liệu lớn.',
       }),
       category: ['discover'],
       schema: schema.boolean(),
     },
     [UI_SETTINGS.QUERY_STRING_OPTIONS]: {
       name: i18n.translate('data.advancedSettings.query.queryStringOptionsTitle', {
-        defaultMessage: 'Query string options',
+        defaultMessage: 'Tùy chọn chuỗi truy vấn',
       }),
       value: '{ "analyze_wildcard": true }',
       description: i18n.translate('data.advancedSettings.query.queryStringOptionsText', {
         defaultMessage:
-          '{optionsLink} for the lucene query string parser. Is only used when "{queryLanguage}" is set ' +
-          'to {luceneLanguage}.',
+          '{optionsLink} cho trình phân tích cú pháp chuỗi truy vấn lucene. Chỉ được sử dụng khi "{queryLanguage}" được đặt ' +
+          'thành {luceneLanguage}.',
         description:
           'Part of composite text: data.advancedSettings.query.queryStringOptions.optionsLinkText + ' +
           'data.advancedSettings.query.queryStringOptionsText',
@@ -106,7 +106,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
           optionsLink:
             '<a href="https://opensearch.org/docs/latest/opensearch/query-dsl/index/" target="_blank" rel="noopener noreferrer">' +
             i18n.translate('data.advancedSettings.query.queryStringOptions.optionsLinkText', {
-              defaultMessage: 'Options',
+              defaultMessage: 'Tùy chọn',
             }) +
             '</a>',
           luceneLanguage: luceneQueryLanguageLabel,
@@ -120,14 +120,14 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
     },
     [UI_SETTINGS.QUERY_ALLOW_LEADING_WILDCARDS]: {
       name: i18n.translate('data.advancedSettings.query.allowWildcardsTitle', {
-        defaultMessage: 'Allow leading wildcards in query',
+        defaultMessage: 'Cho phép các ký tự đại diện đứng đầu trong truy vấn',
       }),
       value: true,
       description: i18n.translate('data.advancedSettings.query.allowWildcardsText', {
         defaultMessage:
-          'When set, * is allowed as the first character in a query clause. ' +
-          'Currently only applies when experimental query features are enabled in the query bar. ' +
-          'To disallow leading wildcards in basic lucene queries, use {queryStringOptionsPattern}.',
+          'Khi được đặt, * được phép làm ký tự đầu tiên trong mệnh đề truy vấn. ' +
+          'Hiện tại chỉ áp dụng khi tính năng truy vấn thử nghiệm được bật trong thanh truy vấn. ' +
+          'Để không cho phép các ký tự đại diện đứng đầu trong các truy vấn lucene cơ bản, hãy sử dụng {queryStringOptionsPattern}.',
         values: {
           queryStringOptionsPattern: UI_SETTINGS.QUERY_STRING_OPTIONS,
         },
@@ -139,7 +139,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
       value: DEFAULT_QUERY_LANGUAGE,
       description: i18n.translate('data.advancedSettings.searchQueryLanguageText', {
         defaultMessage:
-          'Query language used by the query bar. DQL is a new language built specifically for OpenSearch Dashboards.',
+          'Ngôn ngữ truy vấn được thanh truy vấn sử dụng. DQL là ngôn ngữ mới được xây dựng riêng cho Bảng điều khiển OpenSearch.',
       }),
       type: 'select',
       options: ['lucene', 'kuery'],
@@ -153,11 +153,11 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
     },
     [UI_SETTINGS.SORT_OPTIONS]: {
       name: i18n.translate('data.advancedSettings.sortOptionsTitle', {
-        defaultMessage: 'Sort options',
+        defaultMessage: 'Lựa chọn sắp xếp',
       }),
       value: '{ "unmapped_type": "boolean" }',
       description: i18n.translate('data.advancedSettings.sortOptionsText', {
-        defaultMessage: '{optionsLink} for the OpenSearch sort parameter',
+        defaultMessage: '{optionsLink} cho tham số sắp xếp OpenSearch',
         description:
           'Part of composite text: data.advancedSettings.sortOptions.optionsLinkText + ' +
           'data.advancedSettings.sortOptionsText',
@@ -165,7 +165,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
           optionsLink:
             '<a href="https://opensearch.org/docs/latest/opensearch/ux/#sort-results" target="_blank" rel="noopener noreferrer">' +
             i18n.translate('data.advancedSettings.sortOptions.optionsLinkText', {
-              defaultMessage: 'Options',
+              defaultMessage: 'Lựa chọn',
             }) +
             '</a>',
         },
@@ -177,48 +177,47 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
     },
     defaultIndex: {
       name: i18n.translate('data.advancedSettings.defaultIndexTitle', {
-        defaultMessage: 'Default index',
+        defaultMessage: 'Chỉ mục mặc định',
       }),
       value: null,
       type: 'string',
       description: i18n.translate('data.advancedSettings.defaultIndexText', {
-        defaultMessage: 'The index to access if no index is set',
+        defaultMessage: 'Chỉ mục để truy cập nếu không có chỉ mục nào được đặt',
       }),
       schema: schema.nullable(schema.string()),
     },
     [UI_SETTINGS.COURIER_IGNORE_FILTER_IF_FIELD_NOT_IN_INDEX]: {
       name: i18n.translate('data.advancedSettings.courier.ignoreFilterTitle', {
-        defaultMessage: 'Ignore filter(s)',
+        defaultMessage: 'Bỏ qua (các) bộ lọc',
       }),
       value: false,
       description: i18n.translate('data.advancedSettings.courier.ignoreFilterText', {
         defaultMessage:
-          'This configuration enhances support for dashboards containing visualizations accessing dissimilar indexes. ' +
-          'When disabled, all filters are applied to all visualizations. ' +
-          'When enabled, filter(s) will be ignored for a visualization ' +
-          `when the visualization's index does not contain the filtering field.`,
+          'Cấu hình này tăng cường hỗ trợ cho các bảng thông tin chứa hình ảnh trực quan truy cập các chỉ mục khác nhau. ' +
+          'Khi bị tắt, tất cả các bộ lọc sẽ được áp dụng cho tất cả các hình ảnh trực quan. ' +
+          'Khi được bật, (các) bộ lọc sẽ bị bỏ qua để hiển thị trực quan ' +
+          `khi chỉ mục của trực quan không chứa trường lọc.`,
       }),
       category: ['search'],
       schema: schema.boolean(),
     },
     [UI_SETTINGS.COURIER_SET_REQUEST_PREFERENCE]: {
       name: i18n.translate('data.advancedSettings.courier.requestPreferenceTitle', {
-        defaultMessage: 'Request preference',
+        defaultMessage: 'Yêu cầu ưu tiên',
       }),
       value: 'sessionId',
       options: ['sessionId', 'custom', 'none'],
       optionLabels: requestPreferenceOptionLabels,
       type: 'select',
       description: i18n.translate('data.advancedSettings.courier.requestPreferenceText', {
-        defaultMessage: `Allows you to set which shards handle your search requests.
+        defaultMessage: `Cho phép bạn đặt phân đoạn nào xử lý các yêu cầu tìm kiếm của bạn.
           <ul>
-            <li><strong>{sessionId}:</strong> restricts operations to execute all search requests on the same shards.
-              This has the benefit of reusing shard caches across requests.</li>
-            <li><strong>{custom}:</strong> allows you to define a your own preference.
-              Use <strong>'courier:customRequestPreference'</strong> to customize your preference value.</li>
-            <li><strong>{none}:</strong> means do not set a preference.
-              This might provide better performance because requests can be spread across all shard copies.
-              However, results might be inconsistent because different shards might be in different refresh states.</li>
+            <li><strong>{sessionId}:</strong> hạn chế các thao tác thực hiện tất cả yêu cầu tìm kiếm trên cùng một phân đoạn.
+              Điều này có lợi về việc sử dụng lại bộ nhớ đệm phân đoạn cho các yêu cầu.</li>
+            <li><strong>{custom}:</strong> cho phép bạn xác định tùy chọn của riêng mình.
+              Sử dụng <strong>'courier:customRequestPreference'</strong> để tùy chỉnh giá trị tùy chọn của bạn.</li>
+            <li><strong>{none}:</strong> có nghĩa là không đặt tùy chọn.
+            Điều này có thể mang lại hiệu suất tốt hơn vì các yêu cầu có thể được trải rộng trên tất cả các bản sao phân đoạn .\n Tuy nhiên, kết quả có thể không nhất quán vì các phân đoạn khác nhau có thể ở trạng thái làm mới khác nhau.</li>
           </ul>`,
         values: {
           sessionId: requestPreferenceOptionLabels.sessionId,
@@ -231,13 +230,13 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
     },
     [UI_SETTINGS.COURIER_CUSTOM_REQUEST_PREFERENCE]: {
       name: i18n.translate('data.advancedSettings.courier.customRequestPreferenceTitle', {
-        defaultMessage: 'Custom request preference',
+        defaultMessage: 'Tùy chọn yêu cầu tùy chỉnh',
       }),
       value: '_local',
       type: 'string',
       description: i18n.translate('data.advancedSettings.courier.customRequestPreferenceText', {
         defaultMessage:
-          '{requestPreferenceLink} used when {setRequestReferenceSetting} is set to {customSettingValue}.',
+          '{requestPreferenceLink} được sử dụng khi {setRequestReferenceSetting} được đặt thành {customSettingValue}.',
         description:
           'Part of composite text: data.advancedSettings.courier.customRequestPreference.requestPreferenceLinkText + ' +
           'data.advancedSettings.courier.customRequestPreferenceText',
@@ -249,7 +248,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
             i18n.translate(
               'data.advancedSettings.courier.customRequestPreference.requestPreferenceLinkText',
               {
-                defaultMessage: 'Request Preference',
+                defaultMessage: 'Yêu cầu ưu tiên',
               }
             ) +
             '</a>',
@@ -260,14 +259,14 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
     },
     [UI_SETTINGS.COURIER_MAX_CONCURRENT_SHARD_REQUESTS]: {
       name: i18n.translate('data.advancedSettings.courier.maxRequestsTitle', {
-        defaultMessage: 'Max Concurrent Shard Requests',
+        defaultMessage: 'Yêu cầu phân đoạn đồng thời tối đa',
       }),
       value: 0,
       type: 'number',
       description: i18n.translate('data.advancedSettings.courier.maxRequestsText', {
         defaultMessage:
-          'Controls the {maxRequestsLink} setting used for _msearch requests sent by OpenSearch Dashboards. ' +
-          'Set to 0 to disable this config and use the OpenSearch default.',
+          'Kiểm soát cài đặt {maxRequestsLink} được sử dụng cho các yêu cầu _msearch được gửi bởi Trang tổng quan OpenSearch. ' +
+          'Đặt thành 0 để tắt cấu hình này và sử dụng mặc định OpenSearch.',
         values: {
           maxRequestsLink: `<a href="https://opensearch.org/docs/latest/opensearch/query-dsl/full-text/#multi-match"
             target="_blank" rel="noopener noreferrer" >max_concurrent_shard_requests</a>`,
@@ -278,73 +277,70 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
     },
     [UI_SETTINGS.COURIER_BATCH_SEARCHES]: {
       name: i18n.translate('data.advancedSettings.courier.batchSearchesTitle', {
-        defaultMessage: 'Batch concurrent searches',
+        defaultMessage: 'Tìm kiếm đồng thời hàng loạt',
       }),
       value: false,
       type: 'boolean',
       description: i18n.translate('data.advancedSettings.courier.batchSearchesText', {
-        defaultMessage: `When disabled, dashboard panels will load individually, and search requests will terminate when users navigate
-           away or update the query. When enabled, dashboard panels will load together when all of the data is loaded, and
-           searches will not terminate.`,
+        defaultMessage: `Khi bị tắt, các bảng tổng quan sẽ tải riêng lẻ và các yêu cầu tìm kiếm sẽ chấm dứt khi người dùng di chuyển\n đi hoặc cập nhật truy vấn. Khi được bật, các bảng điều khiển trang tổng quan sẽ tải cùng nhau khi tất cả dữ liệu được tải và\n các tìm kiếm sẽ không kết thúc.`,
       }),
       category: ['search'],
       schema: schema.boolean(),
     },
     [UI_SETTINGS.SEARCH_INCLUDE_FROZEN]: {
-      name: 'Search in frozen indices',
-      description: `Will include <a href="https://opensearch.org/docs/latest/opensearch/index-data"
-        target="_blank" rel="noopener noreferrer">frozen indices</a> in results if enabled. Searching through frozen indices
-        might increase the search time.`,
+      name: 'Tìm kiếm trong chỉ mục cố định',
+      description: `Sẽ bao gồm các <a href="https://opensearch.org/docs/latest/opensearch/index-data"
+        target="_blank" rel="noopener noreferrer">chỉ mục cố định</a> trong kết quả nếu được bật. Tìm kiếm thông qua các chỉ mục cố định có thể làm tăng thời gian tìm kiếm.`,
       value: false,
       category: ['search'],
       schema: schema.boolean(),
     },
     [UI_SETTINGS.HISTOGRAM_BAR_TARGET]: {
       name: i18n.translate('data.advancedSettings.histogram.barTargetTitle', {
-        defaultMessage: 'Target bars',
+        defaultMessage: 'Thanh mục tiêu',
       }),
       value: 50,
       description: i18n.translate('data.advancedSettings.histogram.barTargetText', {
         defaultMessage:
-          'Attempt to generate around this many bars when using "auto" interval in date histograms',
+          'Cố gắng tạo xung quanh nhiều thanh này khi sử dụng khoảng thời gian \"auto\" trong biểu đồ ngày',
       }),
       schema: schema.number(),
     },
     [UI_SETTINGS.HISTOGRAM_MAX_BARS]: {
       name: i18n.translate('data.advancedSettings.histogram.maxBarsTitle', {
-        defaultMessage: 'Maximum bars',
+        defaultMessage: 'Thanh tối đa',
       }),
       value: 100,
       description: i18n.translate('data.advancedSettings.histogram.maxBarsText', {
         defaultMessage:
-          'Never show more than this many bars in date histograms, scale values if needed',
+          'Không bao giờ hiển thị nhiều hơn nhiều thanh này trong biểu đồ ngày, giá trị tỷ lệ nếu cần',
       }),
       schema: schema.number(),
     },
     [UI_SETTINGS.HISTORY_LIMIT]: {
       name: i18n.translate('data.advancedSettings.historyLimitTitle', {
-        defaultMessage: 'History limit',
+        defaultMessage: 'Giới hạn lịch sử',
       }),
       value: 10,
       description: i18n.translate('data.advancedSettings.historyLimitText', {
         defaultMessage:
-          'In fields that have history (e.g. query inputs), show this many recent values',
+          'Trong các trường có lịch sử (ví dụ: đầu vào truy vấn), hãy hiển thị nhiều giá trị gần đây này',
       }),
       schema: schema.number(),
     },
     [UI_SETTINGS.SHORT_DOTS_ENABLE]: {
       name: i18n.translate('data.advancedSettings.shortenFieldsTitle', {
-        defaultMessage: 'Shorten fields',
+        defaultMessage: 'Rút ngắn các vùng',
       }),
       value: false,
       description: i18n.translate('data.advancedSettings.shortenFieldsText', {
-        defaultMessage: 'Shorten long fields, for example, instead of foo.bar.baz, show f.b.baz',
+        defaultMessage: 'Rút ngắn các trường dài, ví dụ thay vì foo.bar.baz, hãy hiển thị f.b.baz',
       }),
       schema: schema.boolean(),
     },
     [UI_SETTINGS.FORMAT_DEFAULT_TYPE_MAP]: {
       name: i18n.translate('data.advancedSettings.format.defaultTypeMapTitle', {
-        defaultMessage: 'Field type format name',
+        defaultMessage: 'Tên định dạng loại vùng',
       }),
       value: `{
   "ip": { "id": "ip", "params": {} },
@@ -358,8 +354,8 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
       type: 'json',
       description: i18n.translate('data.advancedSettings.format.defaultTypeMapText', {
         defaultMessage:
-          'Map of the format name to use by default for each field type. ' +
-          '{defaultFormat} is used if the field type is not mentioned explicitly',
+          'Ánh xạ tên định dạng sẽ sử dụng theo mặc định cho từng loại trường.' +
+          '{defaultFormat} được sử dụng nếu loại trường không được đề cập rõ ràng',
         values: {
           defaultFormat: '"_default_"',
         },
@@ -398,12 +394,12 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
     },
     [UI_SETTINGS.FORMAT_NUMBER_DEFAULT_PATTERN]: {
       name: i18n.translate('data.advancedSettings.format.numberFormatTitle', {
-        defaultMessage: 'Number format',
+        defaultMessage: 'Định dạng số',
       }),
       value: '0,0.[000]',
       type: 'string',
       description: i18n.translate('data.advancedSettings.format.numberFormatText', {
-        defaultMessage: 'Default {numeralFormatLink} for the "number" format',
+        defaultMessage: '{numeralFormatLink} mặc định cho định dạng "số".',
         description:
           'Part of composite text: data.advancedSettings.format.numberFormatText + ' +
           'data.advancedSettings.format.numberFormat.numeralFormatLinkText',
@@ -411,7 +407,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
           numeralFormatLink:
             '<a href="http://numeraljs.com/" target="_blank" rel="noopener noreferrer">' +
             i18n.translate('data.advancedSettings.format.numberFormat.numeralFormatLinkText', {
-              defaultMessage: 'numeral format',
+              defaultMessage: 'Định dạng số',
             }) +
             '</a>',
         },
@@ -420,12 +416,12 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
     },
     [UI_SETTINGS.FORMAT_PERCENT_DEFAULT_PATTERN]: {
       name: i18n.translate('data.advancedSettings.format.percentFormatTitle', {
-        defaultMessage: 'Percent format',
+        defaultMessage: 'Định dạng phần trăm',
       }),
       value: '0,0.[000]%',
       type: 'string',
       description: i18n.translate('data.advancedSettings.format.percentFormatText', {
-        defaultMessage: 'Default {numeralFormatLink} for the "percent" format',
+        defaultMessage: '{numeralFormatLink} mặc định cho định dạng "phần trăm".',
         description:
           'Part of composite text: data.advancedSettings.format.percentFormatText + ' +
           'data.advancedSettings.format.percentFormat.numeralFormatLinkText',
@@ -433,7 +429,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
           numeralFormatLink:
             '<a href="http://numeraljs.com/" target="_blank" rel="noopener noreferrer">' +
             i18n.translate('data.advancedSettings.format.percentFormat.numeralFormatLinkText', {
-              defaultMessage: 'numeral format',
+              defaultMessage: 'Định dạng số',
             }) +
             '</a>',
         },
@@ -442,12 +438,12 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
     },
     [UI_SETTINGS.FORMAT_BYTES_DEFAULT_PATTERN]: {
       name: i18n.translate('data.advancedSettings.format.bytesFormatTitle', {
-        defaultMessage: 'Bytes format',
+        defaultMessage: 'Định dạng Bytes',
       }),
       value: '0,0.[0]b',
       type: 'string',
       description: i18n.translate('data.advancedSettings.format.bytesFormatText', {
-        defaultMessage: 'Default {numeralFormatLink} for the "bytes" format',
+        defaultMessage: '{numeralFormatLink} mặc định cho định dạng "Byte".',
         description:
           'Part of composite text: data.advancedSettings.format.bytesFormatText + ' +
           'data.advancedSettings.format.bytesFormat.numeralFormatLinkText',
@@ -455,7 +451,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
           numeralFormatLink:
             '<a href="http://numeraljs.com/" target="_blank" rel="noopener noreferrer">' +
             i18n.translate('data.advancedSettings.format.bytesFormat.numeralFormatLinkText', {
-              defaultMessage: 'numeral format',
+              defaultMessage: 'Định dạng số',
             }) +
             '</a>',
         },
@@ -464,12 +460,12 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
     },
     [UI_SETTINGS.FORMAT_CURRENCY_DEFAULT_PATTERN]: {
       name: i18n.translate('data.advancedSettings.format.currencyFormatTitle', {
-        defaultMessage: 'Currency format',
+        defaultMessage: 'Định dạng tiền tệ',
       }),
       value: '($0,0.[00])',
       type: 'string',
       description: i18n.translate('data.advancedSettings.format.currencyFormatText', {
-        defaultMessage: 'Default {numeralFormatLink} for the "currency" format',
+        defaultMessage: '{numeralFormatLink} mặc định cho định dạng "tiền tệ"',
         description:
           'Part of composite text: data.advancedSettings.format.currencyFormatText + ' +
           'data.advancedSettings.format.currencyFormat.numeralFormatLinkText',
@@ -477,7 +473,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
           numeralFormatLink:
             '<a href="http://numeraljs.com/" target="_blank" rel="noopener noreferrer">' +
             i18n.translate('data.advancedSettings.format.currencyFormat.numeralFormatLinkText', {
-              defaultMessage: 'numeral format',
+              defaultMessage: 'Định dạng số',
             }) +
             '</a>',
         },
@@ -486,7 +482,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
     },
     [UI_SETTINGS.FORMAT_NUMBER_DEFAULT_LOCALE]: {
       name: i18n.translate('data.advancedSettings.format.formattingLocaleTitle', {
-        defaultMessage: 'Formatting locale',
+        defaultMessage: 'Định dạng ngôn ngữ',
       }),
       value: 'en',
       type: 'select',
@@ -495,7 +491,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
         numeralLanguages.map((language: Record<string, any>) => [language.id, language.name])
       ),
       description: i18n.translate('data.advancedSettings.format.formattingLocaleText', {
-        defaultMessage: `{numeralLanguageLink} locale`,
+        defaultMessage: `Ngôn ngữ dành cho {numeralLanguageLink}`,
         description:
           'Part of composite text: data.advancedSettings.format.formattingLocale.numeralLanguageLinkText + ' +
           'data.advancedSettings.format.formattingLocaleText',
@@ -505,7 +501,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
             i18n.translate(
               'data.advancedSettings.format.formattingLocale.numeralLanguageLinkText',
               {
-                defaultMessage: 'Numeral language',
+                defaultMessage: 'ngôn ngữ số',
               }
             ) +
             '</a>',
@@ -515,7 +511,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
     },
     [UI_SETTINGS.TIMEPICKER_REFRESH_INTERVAL_DEFAULTS]: {
       name: i18n.translate('data.advancedSettings.timepicker.refreshIntervalDefaultsTitle', {
-        defaultMessage: 'Time filter refresh interval',
+        defaultMessage: 'Khoảng thời gian làm mới bộ lọc thời gian',
       }),
       value: `{
   "pause": false,
@@ -523,7 +519,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
 }`,
       type: 'json',
       description: i18n.translate('data.advancedSettings.timepicker.refreshIntervalDefaultsText', {
-        defaultMessage: `The timefilter's default refresh interval. The "value" needs to be specified in milliseconds.`,
+        defaultMessage: `Khoảng thời gian làm mới mặc định của bộ lọc thời gian. \"giá trị\" cần được chỉ định theo mili giây.`,
       }),
       requiresPageReload: true,
       schema: schema.object({
@@ -533,7 +529,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
     },
     [UI_SETTINGS.TIMEPICKER_TIME_DEFAULTS]: {
       name: i18n.translate('data.advancedSettings.timepicker.timeDefaultsTitle', {
-        defaultMessage: 'Time filter defaults',
+        defaultMessage: 'Bộ lọc thời gian mặc định',
       }),
       value: `{
   "from": "now-15m",
@@ -542,7 +538,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
       type: 'json',
       description: i18n.translate('data.advancedSettings.timepicker.timeDefaultsText', {
         defaultMessage:
-          'The timefilter selection to use when OpenSearch Dashboards is started without one',
+          'Lựa chọn bộ lọc thời gian sẽ sử dụng khi Bảng thông tin OpenSearch được khởi động mà không có bộ lọc thời gian',
       }),
       requiresPageReload: true,
       schema: schema.object({
@@ -552,7 +548,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
     },
     [UI_SETTINGS.TIMEPICKER_QUICK_RANGES]: {
       name: i18n.translate('data.advancedSettings.timepicker.quickRangesTitle', {
-        defaultMessage: 'Time filter quick ranges',
+        defaultMessage: 'Phạm vi nhanh của bộ lọc thời gian',
       }),
       value: JSON.stringify(
         [
@@ -560,70 +556,70 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
             from: 'now/d',
             to: 'now/d',
             display: i18n.translate('data.advancedSettings.timepicker.today', {
-              defaultMessage: 'Today',
+              defaultMessage: 'Hôm nay',
             }),
           },
           {
             from: 'now/w',
             to: 'now/w',
             display: i18n.translate('data.advancedSettings.timepicker.thisWeek', {
-              defaultMessage: 'This week',
+              defaultMessage: 'Tuần này',
             }),
           },
           {
             from: 'now-15m',
             to: 'now',
             display: i18n.translate('data.advancedSettings.timepicker.last15Minutes', {
-              defaultMessage: 'Last 15 minutes',
+              defaultMessage: '15 phút vừa qua',
             }),
           },
           {
             from: 'now-30m',
             to: 'now',
             display: i18n.translate('data.advancedSettings.timepicker.last30Minutes', {
-              defaultMessage: 'Last 30 minutes',
+              defaultMessage: '30 phút vừa qua',
             }),
           },
           {
             from: 'now-1h',
             to: 'now',
             display: i18n.translate('data.advancedSettings.timepicker.last1Hour', {
-              defaultMessage: 'Last 1 hour',
+              defaultMessage: '1 tiếng vừa qua',
             }),
           },
           {
             from: 'now-24h',
             to: 'now',
             display: i18n.translate('data.advancedSettings.timepicker.last24Hours', {
-              defaultMessage: 'Last 24 hours',
+              defaultMessage: '24 tiếng vừa qua',
             }),
           },
           {
             from: 'now-7d',
             to: 'now',
             display: i18n.translate('data.advancedSettings.timepicker.last7Days', {
-              defaultMessage: 'Last 7 days',
+              defaultMessage: '7 ngày vừa qua',
             }),
           },
           {
             from: 'now-30d',
             to: 'now',
             display: i18n.translate('data.advancedSettings.timepicker.last30Days', {
-              defaultMessage: 'Last 30 days',
+              defaultMessage: '30 ngày vừa qua',
             }),
           },
           {
             from: 'now-90d',
             to: 'now',
             display: i18n.translate('data.advancedSettings.timepicker.last90Days', {
-              defaultMessage: 'Last 90 days',
+              defaultMessage: '90 ngày vừa qua',
             }),
           },
           {
             from: 'now-1y',
             to: 'now',
             display: i18n.translate('data.advancedSettings.timepicker.last1Year', {
-              defaultMessage: 'Last 1 year',
+              defaultMessage: '1 năm vừa qua',
             }),
           },
         ],
@@ -633,9 +629,9 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
       type: 'json',
       description: i18n.translate('data.advancedSettings.timepicker.quickRangesText', {
         defaultMessage:
-          'The list of ranges to show in the Quick section of the time filter. This should be an array of objects, ' +
-          'with each object containing "from", "to" (see {acceptedFormatsLink}), and ' +
-          '"display" (the title to be displayed).',
+          'Danh sách các phạm vi sẽ hiển thị trong phần Nhanh của bộ lọc thời gian. Đây phải là một mảng các đối tượng, ' +
+          'với mỗi đối tượng chứa "từ", "đến" (xem {acceptedFormatsLink}) và' +
+          '"hiển thị" (tiêu đề sẽ được hiển thị).',
         description:
           'Part of composite text: data.advancedSettings.timepicker.quickRangesText + ' +
           'data.advancedSettings.timepicker.quickRanges.acceptedFormatsLinkText',
@@ -644,7 +640,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
             `<a href="https://opensearch.org/docs/latest/opensearch/units"
             target="_blank" rel="noopener noreferrer">` +
             i18n.translate('data.advancedSettings.timepicker.quickRanges.acceptedFormatsLinkText', {
-              defaultMessage: 'accepted formats',
+              defaultMessage: 'định dạng được chấp nhận',
             }) +
             '</a>',
         },
@@ -659,34 +655,34 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
     },
     [UI_SETTINGS.INDEXPATTERN_PLACEHOLDER]: {
       name: i18n.translate('data.advancedSettings.indexPatternPlaceholderTitle', {
-        defaultMessage: 'Index pattern placeholder',
+        defaultMessage: 'Phần giữ chỗ của mẫu chỉ mục',
       }),
       value: '',
       description: i18n.translate('data.advancedSettings.indexPatternPlaceholderText', {
         defaultMessage:
-          'The placeholder for the "Index pattern name" field in "Management > Index Patterns > Create Index Pattern".',
+          'Trình giữ chỗ cho trường \"Tên mẫu chỉ mục\" trong \"Quản lý > Mẫu chỉ mục > Tạo mẫu chỉ mục\".',
       }),
       schema: schema.string(),
     },
     [UI_SETTINGS.FILTERS_PINNED_BY_DEFAULT]: {
       name: i18n.translate('data.advancedSettings.pinFiltersTitle', {
-        defaultMessage: 'Pin filters by default',
+        defaultMessage: 'Bộ lọc ghim theo mặc định',
       }),
       value: false,
       description: i18n.translate('data.advancedSettings.pinFiltersText', {
-        defaultMessage: 'Whether the filters should have a global state (be pinned) by default',
+        defaultMessage: 'Theo mặc định, các bộ lọc có nên có trạng thái chung (được ghim) hay không',
       }),
       schema: schema.boolean(),
     },
     [UI_SETTINGS.FILTERS_EDITOR_SUGGEST_VALUES]: {
       name: i18n.translate('data.advancedSettings.suggestFilterValuesTitle', {
-        defaultMessage: 'Filter editor suggest values',
+        defaultMessage: 'Giá trị đề xuất của trình chỉnh sửa bộ lọc',
         description: '"Filter editor" refers to the UI you create filters in.',
       }),
       value: true,
       description: i18n.translate('data.advancedSettings.suggestFilterValuesText', {
         defaultMessage:
-          'Set this property to false to prevent the filter editor from suggesting values for fields.',
+          'Đặt thuộc tính này thành false để ngăn trình chỉnh sửa bộ lọc đề xuất giá trị cho các trường.',
       }),
       schema: schema.boolean(),
     },

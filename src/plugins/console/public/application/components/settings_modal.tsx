@@ -126,14 +126,14 @@ export function DevToolsSettingsModal(props: Props) {
           label={
             <FormattedMessage
               id="console.settingsPage.refreshingDataLabel"
-              defaultMessage="Refreshing autocomplete suggestions"
+              defaultMessage="Làm mới đề xuất tự động hoàn thành"
             />
           }
           helpText={
             <FormattedMessage
               id="console.settingsPage.refreshingDataDescription"
-              defaultMessage="Console refreshes autocomplete suggestions by querying OpenSearch.
-              Automatic refreshes may be an issue if you have a large cluster or if you have network limitations."
+              defaultMessage="Bảng điều khiển làm mới các đề xuất tự động hoàn thành bằng cách truy vấn OpenSearch. 
+              Làm mới tự động có thể là một vấn đề nếu bạn có một cụm lớn hoặc nếu bạn có những hạn chế về mạng."
             />
           }
         >
@@ -143,7 +143,7 @@ export function DevToolsSettingsModal(props: Props) {
             id="autocompletePolling"
             label={
               <FormattedMessage
-                defaultMessage="Automatically refresh autocomplete suggestions"
+                defaultMessage="Tự động làm mới các đề xuất tự động hoàn thành"
                 id="console.settingsPage.pollingLabelText"
               />
             }
@@ -164,7 +164,7 @@ export function DevToolsSettingsModal(props: Props) {
           }}
         >
           <FormattedMessage
-            defaultMessage="Refresh autocomplete suggestions"
+            defaultMessage="Làm mới đề xuất tự động hoàn thành"
             id="console.settingsPage.refreshButtonLabel"
           />
         </EuiButton>
@@ -179,14 +179,14 @@ export function DevToolsSettingsModal(props: Props) {
     >
       <EuiModalHeader>
         <EuiModalHeaderTitle>
-          <FormattedMessage id="console.settingsPage.pageTitle" defaultMessage="Console Settings" />
+          <FormattedMessage id="console.settingsPage.pageTitle" defaultMessage="Cài đặt bảng điều khiển" />
         </EuiModalHeaderTitle>
       </EuiModalHeader>
 
       <EuiModalBody>
         <EuiFormRow
           label={
-            <FormattedMessage id="console.settingsPage.fontSizeLabel" defaultMessage="Font Size" />
+            <FormattedMessage id="console.settingsPage.fontSizeLabel" defaultMessage="Cỡ chữ" />
           }
         >
           <EuiFieldNumber
@@ -210,7 +210,7 @@ export function DevToolsSettingsModal(props: Props) {
             id="wrapLines"
             label={
               <FormattedMessage
-                defaultMessage="Wrap long lines"
+                defaultMessage="Xếp những hàng dài"
                 id="console.settingsPage.wrapLongLinesLabelText"
               />
             }
@@ -222,7 +222,7 @@ export function DevToolsSettingsModal(props: Props) {
           label={
             <FormattedMessage
               id="console.settingsPage.jsonSyntaxLabel"
-              defaultMessage="JSON syntax"
+              defaultMessage="Cú pháp JSON"
             />
           }
         >
@@ -232,7 +232,7 @@ export function DevToolsSettingsModal(props: Props) {
             id="tripleQuotes"
             label={
               <FormattedMessage
-                defaultMessage="Use triple quotes in output pane"
+                defaultMessage="Sử dụng dấu ngoặc kép trong ngăn đầu ra"
                 id="console.settingsPage.tripleQuotesMessage"
               />
             }
@@ -245,7 +245,7 @@ export function DevToolsSettingsModal(props: Props) {
           label={
             <FormattedMessage
               id="console.settingsPage.autocompleteLabel"
-              defaultMessage="Autocomplete"
+              defaultMessage="Tự động hoàn thành"
             />
           }
         >
@@ -266,11 +266,11 @@ export function DevToolsSettingsModal(props: Props) {
 
       <EuiModalFooter>
         <EuiButtonEmpty data-test-subj="settingsCancelButton" onClick={props.onClose}>
-          <FormattedMessage id="console.settingsPage.cancelButtonLabel" defaultMessage="Cancel" />
+          <FormattedMessage id="console.settingsPage.cancelButtonLabel" defaultMessage="Hủy bỏ" />
         </EuiButtonEmpty>
 
         <EuiButton fill data-test-subj="settings-save-button" onClick={saveSettings}>
-          <FormattedMessage id="console.settingsPage.saveButtonLabel" defaultMessage="Save" />
+          <FormattedMessage id="console.settingsPage.saveButtonLabel" defaultMessage="Lưu" />
         </EuiButton>
       </EuiModalFooter>
     </EuiModal>

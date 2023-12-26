@@ -208,7 +208,7 @@ export function DiscoverSidebar({
                   <h3>
                     <FormattedMessage
                       id="discover.fieldChooser.filter.selectedFieldsTitle"
-                      defaultMessage="Selected fields"
+                      defaultMessage="Các vùng đã chọn"
                     />
                   </h3>
                 </EuiTitle>
@@ -252,7 +252,7 @@ export function DiscoverSidebar({
                   <h3>
                     <FormattedMessage
                       id="discover.fieldChooser.filter.availableFieldsTitle"
-                      defaultMessage="Available fields"
+                      defaultMessage="Các vùng có sẵn"
                     />
                   </h3>
                 </EuiTitle>

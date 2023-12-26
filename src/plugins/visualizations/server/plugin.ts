@@ -68,26 +68,24 @@ export class VisualizationsPlugin
     core.uiSettings.register({
       [VISUALIZE_ENABLE_LABS_SETTING]: {
         name: i18n.translate('visualizations.advancedSettings.visualizeEnableLabsTitle', {
-          defaultMessage: 'Enable experimental visualizations',
+          defaultMessage: 'Bật trực quan thử nghiệm',
         }),
         value: true,
         description: i18n.translate('visualizations.advancedSettings.visualizeEnableLabsText', {
-          defaultMessage: `Allows users to create, view, and edit experimental visualizations. If disabled,
-            only visualizations that are considered production-ready are available to the user.`,
+          defaultMessage: `Cho phép người dùng tạo, xem và chỉnh sửa trực quan thử nghiệm. Nếu bị tắt,\n chỉ những hình ảnh trực quan được coi là sẵn sàng sản xuất mới có sẵn cho người dùng.`,
         }),
         category: ['visualization'],
         schema: schema.boolean(),
       },
       [VISUALIZE_DISABLE_BUCKET_AGG_SETTING]: {
         name: i18n.translate('visualizations.advancedSettings.visualizeDisableBucketAgg', {
-          defaultMessage: 'Disable visualizations bucket aggregation types',
+          defaultMessage: 'Tắt các loại tổng hợp nhóm trực quan',
         }),
         value: [],
         description: i18n.translate(
           'visualizations.advancedSettings.visualizeDisableBucketAgg.description',
           {
-            defaultMessage: `A comma-separated list of bucket aggregations' names. e.g. significant_terms, terms.
-            Deactivates the specified bucket aggregations from visualizations.`,
+            defaultMessage: `Danh sách tên các nhóm tập hợp được phân tách bằng dấu phẩy. ví dụ. quan trọng_terms, điều khoản.\n Tắt các tập hợp nhóm được chỉ định khỏi trực quan.`,
           }
         ),
         category: ['visualization'],

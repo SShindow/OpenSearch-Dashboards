@@ -231,7 +231,7 @@ export class Form extends PureComponent<FormProps> {
           <em>
             <FormattedMessage
               id="advancedSettings.form.searchResultText"
-              defaultMessage="Search terms are hiding {settingsCount} settings {clearSearch}"
+              defaultMessage="Cụm từ tìm kiếm đang ẩn {settingsCount} cài đặt {clearSearch}"
               values={{
                 settingsCount: totalSettings - currentSettings,
                 clearSearch: (
@@ -239,7 +239,7 @@ export class Form extends PureComponent<FormProps> {
                     <em>
                       <FormattedMessage
                         id="advancedSettings.form.clearSearchResultText"
-                        defaultMessage="(clear search)"
+                        defaultMessage="(Xóa tìm kiếm)"
                       />
                     </em>
                   </EuiLink>
@@ -295,13 +295,13 @@ export class Form extends PureComponent<FormProps> {
         <EuiPanel paddingSize="l">
           <FormattedMessage
             id="advancedSettings.form.noSearchResultText"
-            defaultMessage="No settings found {clearSearch}"
+            defaultMessage="Không tìm thấy cài đặt nào {clearSearch}"
             values={{
               clearSearch: (
                 <EuiLink onClick={clearQuery}>
                   <FormattedMessage
                     id="advancedSettings.form.clearNoSearchResultText"
-                    defaultMessage="(clear search)"
+                    defaultMessage="(Xóa tìm kiếm)"
                   />
                 </EuiLink>
               ),
@@ -361,7 +361,7 @@ export class Form extends PureComponent<FormProps> {
                 data-test-subj="advancedSetting-cancelButton"
               >
                 {i18n.translate('advancedSettings.form.cancelButtonLabel', {
-                  defaultMessage: 'Cancel changes',
+                  defaultMessage: 'Hủy thay đổi',
                 })}
               </EuiButtonEmpty>
             </EuiFlexItem>

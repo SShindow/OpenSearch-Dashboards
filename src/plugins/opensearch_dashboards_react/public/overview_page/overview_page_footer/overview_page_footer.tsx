@@ -68,7 +68,7 @@ export const OverviewPageFooter: FC<Props> = ({ addBasePath, path }) => {
         >
           <FormattedMessage
             id="opensearch-dashboards-react.pageFooter.changeHomeRouteLink"
-            defaultMessage="Display a different page on log in"
+            defaultMessage="Hiển thị một trang khác khi đăng nhập"
           />
         </EuiButtonEmpty>
       </RedirectAppLinks>
@@ -92,7 +92,7 @@ export const OverviewPageFooter: FC<Props> = ({ addBasePath, path }) => {
       >
         <FormattedMessage
           id="opensearch-dashboards-react.pageFooter.makeDefaultRouteLink"
-          defaultMessage="Make this my landing page"
+          defaultMessage="Đặt đây làm trang đích của tôi"
         />
       </EuiButtonEmpty>
     );
@@ -117,7 +117,7 @@ export const OverviewPageFooter: FC<Props> = ({ addBasePath, path }) => {
               >
                 <FormattedMessage
                   id="opensearch-dashboards-react.pageFooter.appDirectoryButtonLabel"
-                  defaultMessage="View app directory"
+                  defaultMessage="Xem thư mục ứng dụng"
                 />
               </EuiButtonEmpty>
             </RedirectAppLinks>

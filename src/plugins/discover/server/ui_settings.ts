@@ -49,139 +49,139 @@ import {
 export const uiSettings: Record<string, UiSettingsParams> = {
   [DEFAULT_COLUMNS_SETTING]: {
     name: i18n.translate('discover.advancedSettings.defaultColumnsTitle', {
-      defaultMessage: 'Default columns',
+      defaultMessage: 'Cột mặc định',
     }),
     value: ['_source'],
     description: i18n.translate('discover.advancedSettings.defaultColumnsText', {
-      defaultMessage: 'Columns displayed by default in the Discovery tab',
+      defaultMessage: 'Các cột được hiển thị theo mặc định trong tab Khám phá',
     }),
     category: ['discover'],
     schema: schema.arrayOf(schema.string()),
   },
   [SAMPLE_SIZE_SETTING]: {
     name: i18n.translate('discover.advancedSettings.sampleSizeTitle', {
-      defaultMessage: 'Number of rows',
+      defaultMessage: 'Số hàng',
     }),
     value: 500,
     description: i18n.translate('discover.advancedSettings.sampleSizeText', {
-      defaultMessage: 'The number of rows to show in the table',
+      defaultMessage: 'Số hàng hiển thị trong bảng',
     }),
     category: ['discover'],
     schema: schema.number(),
   },
   [AGGS_TERMS_SIZE_SETTING]: {
     name: i18n.translate('discover.advancedSettings.aggsTermsSizeTitle', {
-      defaultMessage: 'Number of terms',
+      defaultMessage: 'Số điều mục',
     }),
     value: 20,
     type: 'number',
     description: i18n.translate('discover.advancedSettings.aggsTermsSizeText', {
       defaultMessage:
-        'Determines how many terms will be visualized when clicking the "visualize" ' +
-        'button, in the field drop downs, in the discover sidebar.',
+        'Xác định số lượng thuật ngữ sẽ được hiển thị khi nhấp vào nút \"trực quan\" ' +
+        ', trong vùng thả xuống, trong thanh bên khám phá.',
     }),
     category: ['discover'],
     schema: schema.number(),
   },
   [SORT_DEFAULT_ORDER_SETTING]: {
     name: i18n.translate('discover.advancedSettings.sortDefaultOrderTitle', {
-      defaultMessage: 'Default sort direction',
+      defaultMessage: 'Hướng sắp xếp mặc định',
     }),
     value: 'desc',
     options: ['desc', 'asc'],
     optionLabels: {
       desc: i18n.translate('discover.advancedSettings.sortOrderDesc', {
-        defaultMessage: 'Descending',
+        defaultMessage: 'Giảm dần',
       }),
       asc: i18n.translate('discover.advancedSettings.sortOrderAsc', {
-        defaultMessage: 'Ascending',
+        defaultMessage: 'Tăng dần',
       }),
     },
     type: 'select',
     description: i18n.translate('discover.advancedSettings.sortDefaultOrderText', {
       defaultMessage:
-        'Controls the default sort direction for time based index patterns in the Discover app.',
+        'Kiểm soát hướng sắp xếp mặc định cho các mẫu chỉ mục dựa trên thời gian trong ứng dụng Khám phá.',
     }),
     category: ['discover'],
     schema: schema.oneOf([schema.literal('desc'), schema.literal('asc')]),
   },
   [SEARCH_ON_PAGE_LOAD_SETTING]: {
     name: i18n.translate('discover.advancedSettings.searchOnPageLoadTitle', {
-      defaultMessage: 'Search on page load',
+      defaultMessage: 'Tìm kiếm khi tải trang',
     }),
     value: true,
     type: 'boolean',
     description: i18n.translate('discover.advancedSettings.searchOnPageLoadText', {
       defaultMessage:
-        'Controls whether a search is executed when Discover first loads. This setting does not ' +
-        'have an effect when loading a saved search.',
+        'Kiểm soát xem tìm kiếm có được thực hiện khi Khám phá tải lần đầu hay không. Cài đặt này không' +
+        'có hiệu lực khi tải tìm kiếm đã lưu.',
     }),
     category: ['discover'],
     schema: schema.boolean(),
   },
   [DOC_HIDE_TIME_COLUMN_SETTING]: {
     name: i18n.translate('discover.advancedSettings.docTableHideTimeColumnTitle', {
-      defaultMessage: "Hide 'Time' column",
+      defaultMessage: "Ẩn cột 'Thời gian'",
     }),
     value: false,
     description: i18n.translate('discover.advancedSettings.docTableHideTimeColumnText', {
-      defaultMessage: "Hide the 'Time' column in Discover and in all Saved Searches on Dashboards.",
+      defaultMessage: "Ẩn cột 'Thời gian' trong phần Khám phá và trong tất cả các Tìm kiếm đã lưu trên Trang tổng quan.",
     }),
     category: ['discover'],
     schema: schema.boolean(),
   },
   [FIELDS_LIMIT_SETTING]: {
     name: i18n.translate('discover.advancedSettings.fieldsPopularLimitTitle', {
-      defaultMessage: 'Popular fields limit',
+      defaultMessage: 'Giới hạn các vùng phổ biến',
     }),
     value: 10,
     description: i18n.translate('discover.advancedSettings.fieldsPopularLimitText', {
-      defaultMessage: 'The top N most popular fields to show',
+      defaultMessage: 'N vùng phổ biến nhất để hiển thị',
     }),
     schema: schema.number(),
   },
   [CONTEXT_DEFAULT_SIZE_SETTING]: {
     name: i18n.translate('discover.advancedSettings.context.defaultSizeTitle', {
-      defaultMessage: 'Context size',
+      defaultMessage: 'Kích thước nội dung',
     }),
     value: 5,
     description: i18n.translate('discover.advancedSettings.context.defaultSizeText', {
-      defaultMessage: 'The number of surrounding entries to show in the context view',
+      defaultMessage: 'Số lượng mục xung quanh sẽ hiển thị trong chế độ xem nội dung',
     }),
     category: ['discover'],
     schema: schema.number(),
   },
   [CONTEXT_STEP_SETTING]: {
     name: i18n.translate('discover.advancedSettings.context.sizeStepTitle', {
-      defaultMessage: 'Context size step',
+      defaultMessage: 'Bước kích thước nội dung',
     }),
     value: 5,
     description: i18n.translate('discover.advancedSettings.context.sizeStepText', {
-      defaultMessage: 'The step size to increment or decrement the context size by',
+      defaultMessage: 'Kích thước bước để tăng hoặc giảm kích thước ngữ cảnh theo',
     }),
     category: ['discover'],
     schema: schema.number(),
   },
   [CONTEXT_TIE_BREAKER_FIELDS_SETTING]: {
     name: i18n.translate('discover.advancedSettings.context.tieBreakerFieldsTitle', {
-      defaultMessage: 'Tie breaker fields',
+      defaultMessage: 'Các vùng liên kết',
     }),
     value: ['_doc'],
     description: i18n.translate('discover.advancedSettings.context.tieBreakerFieldsText', {
       defaultMessage:
-        'A comma-separated list of fields to use for tie-breaking between documents that have the same timestamp value. ' +
-        'From this list the first field that is present and sortable in the current index pattern is used.',
+        'Danh sách các trường được phân tách bằng dấu phẩy dùng để ngắt liên kết giữa các tài liệu có cùng giá trị dấu thời gian. ' +
+        'Từ danh sách này, trường đầu tiên hiện diện và có thể sắp xếp trong mẫu chỉ mục hiện tại sẽ được sử dụng.',
     }),
     category: ['discover'],
     schema: schema.arrayOf(schema.string()),
   },
   [MODIFY_COLUMNS_ON_SWITCH]: {
     name: i18n.translate('discover.advancedSettings.discover.modifyColumnsOnSwitchTitle', {
-      defaultMessage: 'Modify columns when changing index patterns',
+      defaultMessage: 'Chỉnh sửa đổi cột khi thay đổi mẫu chỉ mục',
     }),
     value: true,
     description: i18n.translate('discover.advancedSettings.discover.modifyColumnsOnSwitchText', {
-      defaultMessage: 'Remove columns that not available in the new index pattern.',
+      defaultMessage: 'Xóa các cột không có sẵn trong mẫu chỉ mục mới.',
     }),
     category: ['discover'],
     schema: schema.boolean(),

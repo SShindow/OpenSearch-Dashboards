@@ -137,7 +137,7 @@ export class HomePublicPlugin
     featureCatalogue.register({
       id: 'home_tutorial_directory',
       title: i18n.translate('home.tutorialDirectory.featureCatalogueTitle', {
-        defaultMessage: 'Add sample data',
+        defaultMessage: 'Thêm dữ liệu mẫu',
       }),
       description: i18n.translate('home.tutorialDirectory.featureCatalogueDescription', {
         defaultMessage: 'Get started with sample data, visualizations, and dashboards.',

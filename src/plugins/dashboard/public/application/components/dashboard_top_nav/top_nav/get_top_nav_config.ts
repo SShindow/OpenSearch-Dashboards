@@ -184,7 +184,7 @@ function getCreateNewConfig(action: NavAction) {
     iconType: 'plusInCircleFilled',
     id: 'addNew',
     label: i18n.translate('dashboard.topNave.addNewButtonAriaLabel', {
-      defaultMessage: 'Create new',
+      defaultMessage: 'Tạo mới',
     }),
     description: i18n.translate('dashboard.topNave.addNewConfigDescription', {
       defaultMessage: 'Create a new panel on this dashboard',

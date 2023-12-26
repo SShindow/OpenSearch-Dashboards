@@ -74,7 +74,7 @@ function DeveloperExamples({ examples, navigateToApp, getUrlForApp }: Props) {
               The following examples showcase services and APIs that are available to developers.
             </p>
             <EuiFieldSearch
-              placeholder="Search"
+              placeholder="Tìm kiếm"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               isClearable={true}

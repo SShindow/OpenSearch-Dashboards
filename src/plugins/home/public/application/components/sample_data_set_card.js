@@ -95,12 +95,12 @@ export class SampleDataSetCard extends React.Component {
                 {this.props.isProcessing ? (
                   <FormattedMessage
                     id="home.sampleDataSetCard.removingButtonLabel"
-                    defaultMessage="Removing"
+                    defaultMessage="Đang xóa"
                   />
                 ) : (
                   <FormattedMessage
                     id="home.sampleDataSetCard.removeButtonLabel"
-                    defaultMessage="Remove"
+                    defaultMessage="Xóa"
                   />
                 )}
               </EuiButtonEmpty>
@@ -143,12 +143,12 @@ export class SampleDataSetCard extends React.Component {
                 {this.props.isProcessing ? (
                   <FormattedMessage
                     id="home.sampleDataSetCard.addingButtonLabel"
-                    defaultMessage="Adding"
+                    defaultMessage="Đang thêm"
                   />
                 ) : (
                   <FormattedMessage
                     id="home.sampleDataSetCard.addButtonLabel"
-                    defaultMessage="Add data"
+                    defaultMessage="Thêm dữ liệu"
                   />
                 )}
               </EuiButton>
@@ -184,7 +184,7 @@ export class SampleDataSetCard extends React.Component {
                 >
                   <FormattedMessage
                     id="home.sampleDataSetCard.default.addButtonLabel"
-                    defaultMessage="Add data"
+                    defaultMessage="Thêm dữ liệu"
                   />
                 </EuiButton>
               </EuiToolTip>

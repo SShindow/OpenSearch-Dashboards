@@ -36,10 +36,10 @@ import { SampleDatasetSchema, AppLinkSchema } from '../../lib/sample_dataset_reg
 import { appendDataSourceId, getSavedObjectsWithDataSource } from '../util';
 
 const logsName = i18n.translate('home.sampleData.logsSpecTitle', {
-  defaultMessage: 'Sample web logs',
+  defaultMessage: 'Mẫu nhật ký web',
 });
 const logsDescription = i18n.translate('home.sampleData.logsSpecDescription', {
-  defaultMessage: 'Sample data, visualizations, and dashboards for monitoring web logs.',
+  defaultMessage: 'Dữ liệu mẫu, hình ảnh trực quan và bảng điều khiển để theo dõi nhật ký web.',
 });
 const initialAppLinks = [] as AppLinkSchema[];
 

@@ -280,14 +280,14 @@ export function DiscoverFieldSearch({ onChange, value, types }: Props) {
               >
                 <FormattedMessage
                   id="discover.fieldChooser.fieldFilterFacetButtonLabel"
-                  defaultMessage="Filter by type"
+                  defaultMessage="Lọc theo loại"
                 />
               </EuiFilterButton>
             }
           >
             <EuiPopoverTitle>
               {i18n.translate('discover.fieldChooser.filter.filterByTypeLabel', {
-                defaultMessage: 'Filter by type',
+                defaultMessage: 'Lọc theo loại',
               })}
             </EuiPopoverTitle>
             {selectionPanel}

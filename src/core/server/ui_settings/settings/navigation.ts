@@ -37,7 +37,7 @@ export const getNavigationSettings = (): Record<string, UiSettingsParams> => {
   return {
     defaultRoute: {
       name: i18n.translate('core.ui_settings.params.defaultRoute.defaultRouteTitle', {
-        defaultMessage: 'Default route',
+        defaultMessage: 'Tuyến đường mặc định',
       }),
       value: '/app/home',
       schema: schema.string({
@@ -54,27 +54,27 @@ export const getNavigationSettings = (): Record<string, UiSettingsParams> => {
       }),
       description: i18n.translate('core.ui_settings.params.defaultRoute.defaultRouteText', {
         defaultMessage:
-          'This setting specifies the default route when opening OpenSearch Dashboards, ' +
-          'You can use this setting to modify the landing page when opening OpenSearch Dashboards, ' +
-          'The route must be a relative URL.',
+          'Cài đặt này chỉ định tuyến mặc định khi mở Bảng thông tin OpenSearch, ' +
+          'Bạn có thể sử dụng cài đặt này để sửa đổi trang đích khi mở Bảng thông tin OpenSearch, ' +
+          'Tuyến đường phải là một URL tương đối. ',
       }),
     },
     pageNavigation: {
       name: i18n.translate('core.ui_settings.params.pageNavigationName', {
-        defaultMessage: 'Side nav style',
+        defaultMessage: 'Kiểu điều hướng bên',
       }),
       value: 'modern',
       description: i18n.translate('core.ui_settings.params.pageNavigationDesc', {
-        defaultMessage: 'Change the style of navigation',
+        defaultMessage: 'Thay đổi kiểu điều hướng',
       }),
       type: 'select',
       options: ['modern', 'legacy'],
       optionLabels: {
         modern: i18n.translate('core.ui_settings.params.pageNavigationModern', {
-          defaultMessage: 'Modern',
+          defaultMessage: 'Hiện đại',
         }),
         legacy: i18n.translate('core.ui_settings.params.pageNavigationLegacy', {
-          defaultMessage: 'Legacy',
+          defaultMessage: 'Di sản',
         }),
       },
       category: ['appearance'],

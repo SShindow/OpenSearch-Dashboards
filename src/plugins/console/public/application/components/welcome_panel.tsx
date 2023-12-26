@@ -55,7 +55,7 @@ export function WelcomePanel(props: Props) {
           <h2>
             <FormattedMessage
               id="console.welcomePage.pageTitle"
-              defaultMessage="Welcome to Console"
+              defaultMessage="Chào mừng đến với Bảng điều khiển"
             />
           </h2>
         </EuiTitle>
@@ -65,66 +65,63 @@ export function WelcomePanel(props: Props) {
           <h4>
             <FormattedMessage
               id="console.welcomePage.quickIntroTitle"
-              defaultMessage="Quick intro to the UI"
+              defaultMessage="Giới thiệu nhanh về giao diện người dùng"
             />
           </h4>
           <p>
             <FormattedMessage
               id="console.welcomePage.quickIntroDescription"
-              defaultMessage="The Console UI is split into two panes: an editor pane (left) and a response pane (right).
-                Use the editor to type requests and submit them to OpenSearch. The results will be displayed in
-                the response pane on the right side."
+              defaultMessage="Giao diện người dùng Console được chia thành hai khung: khung soạn thảo (trái) và khung phản hồi (phải). Sử dụng trình chỉnh sửa để nhập yêu cầu và gửi chúng đến OpenSearch. Kết quả sẽ được hiển thị trong khung phản hồi ở bên phải."
             />
           </p>
           <p>
             <FormattedMessage
               id="console.welcomePage.supportedRequestFormatTitle"
-              defaultMessage="Console understands requests in a compact format, similar to cURL:"
+              defaultMessage="Console hiểu các yêu cầu ở định dạng nhỏ gọn, tương tự như cURL:"
             />
           </p>
           <EditorExample panel="welcome" />
           <p>
             <FormattedMessage
               id="console.welcomePage.supportedRequestFormatDescription"
-              defaultMessage="While typing a request, Console will make suggestions which you can then accept by hitting Enter/Tab.
-              These suggestions are made based on the request structure as well as your indices and types."
+              defaultMessage="Trong khi nhập yêu cầu, Console sẽ đưa ra đề xuất mà bạn có thể chấp nhận bằng cách nhấn Enter/Tab. Những đề xuất này được đưa ra dựa trên cấu trúc yêu cầu cũng như các chỉ mục và loại của bạn.."
             />
           </p>
           <h4>
             <FormattedMessage
               id="console.welcomePage.quickTipsTitle"
-              defaultMessage="A few quick tips, while I have your attention"
+              defaultMessage="Một vài lời khuyên nhanh, khi tôi đang có sự chú ý của bạn"
             />
           </h4>
           <ul>
             <li>
               <FormattedMessage
                 id="console.welcomePage.quickTips.submitRequestDescription"
-                defaultMessage="Submit requests to OpenSearch using the green triangle button."
+                defaultMessage="Gửi yêu cầu tới OpenSearch bằng nút tam giác màu xanh lá cây."
               />
             </li>
             <li>
               <FormattedMessage
                 id="console.welcomePage.quickTips.useWrenchMenuDescription"
-                defaultMessage="Use the wrench menu for other useful things."
+                defaultMessage="Sử dụng menu cờ lê cho những việc hữu ích khác."
               />
             </li>
             <li>
               <FormattedMessage
                 id="console.welcomePage.quickTips.cUrlFormatForRequestsDescription"
-                defaultMessage="You can paste requests in cURL format and they will be translated to the Console syntax."
+                defaultMessage="Bạn có thể dán các yêu cầu ở định dạng cURL và chúng sẽ được dịch sang cú pháp Console."
               />
             </li>
             <li>
               <FormattedMessage
                 id="console.welcomePage.quickTips.resizeEditorDescription"
-                defaultMessage="You can resize the editor and output panes by dragging the separator between them."
+                defaultMessage="Bạn có thể thay đổi kích thước trình soạn thảo và ngăn đầu ra bằng cách kéo dấu phân cách giữa chúng."
               />
             </li>
             <li>
               <FormattedMessage
                 id="console.welcomePage.quickTips.keyboardShortcutsDescription"
-                defaultMessage="Study the keyboard shortcuts under the Help button. Good stuff in there!"
+                defaultMessage="Học các phím tắt bên dưới nút Trợ giúp. Có thứ tốt ở đó!"
               />
             </li>
           </ul>
@@ -137,7 +134,7 @@ export function WelcomePanel(props: Props) {
           data-test-subj="help-close-button"
           onClick={props.onDismiss}
         >
-          <FormattedMessage id="console.welcomePage.closeButtonLabel" defaultMessage="Dismiss" />
+          <FormattedMessage id="console.welcomePage.closeButtonLabel" defaultMessage="Bỏ qua" />
         </EuiButton>
       </EuiFlyoutFooter>
     </EuiFlyout>

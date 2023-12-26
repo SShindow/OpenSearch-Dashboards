@@ -37,7 +37,7 @@ export function getRootBreadcrumbs(): EuiBreadcrumb[] {
   return [
     {
       text: i18n.translate('discover.rootBreadcrumb', {
-        defaultMessage: 'Discover',
+        defaultMessage: 'Khám phá',
       }),
       onClick: () => core.application.navigateToApp('discover'),
     },

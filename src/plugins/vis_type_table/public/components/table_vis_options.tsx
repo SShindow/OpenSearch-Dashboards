@@ -86,7 +86,7 @@ function TableOptions({
           <>
             <FormattedMessage
               id="visTypeTable.params.perPageLabel"
-              defaultMessage="Max rows per page"
+              defaultMessage="Số hàng tối đa mỗi trang"
             />{' '}
             <EuiIconTip
               content="Leaving this field empty means it will use number of buckets from the response."

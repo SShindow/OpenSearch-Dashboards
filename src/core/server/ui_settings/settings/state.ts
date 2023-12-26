@@ -36,14 +36,14 @@ export const getStateSettings = (): Record<string, UiSettingsParams> => {
   return {
     'state:storeInSessionStorage': {
       name: i18n.translate('core.ui_settings.params.storeUrlTitle', {
-        defaultMessage: 'Store URLs in session storage',
+        defaultMessage: 'Lưu trữ URL trong bộ nhớ phiên',
       }),
       value: false,
       description: i18n.translate('core.ui_settings.params.storeUrlText', {
         defaultMessage:
-          'The URL can sometimes grow to be too large for some browsers to handle. ' +
-          'To counter-act this we are testing if storing parts of the URL in session storage could help. ' +
-          'Please let us know how it goes!',
+          'URL đôi khi có thể trở nên quá lớn khiến một số trình duyệt không thể xử lý được. ' +
+          'Để chống lại điều này, chúng tôi đang kiểm tra xem việc lưu trữ các phần của URL trong bộ nhớ phiên có thể giúp ích hay không. ' +
+          'Xin vui lòng cho chúng tôi biết nó diễn ra như thế nào!',
       }),
       schema: schema.boolean(),
     },

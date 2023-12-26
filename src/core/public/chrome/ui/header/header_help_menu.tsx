@@ -208,7 +208,7 @@ class HeaderHelpMenuUI extends Component<Props, State> {
         <EuiButtonEmpty href={opensearchDashboardsDocLink} target="_blank" size="xs" flush="left">
           <FormattedMessage
             id="core.ui.chrome.headerGlobalNav.helpMenuOpenSearchDashboardsDocumentationTitle"
-            defaultMessage="Documentation"
+            defaultMessage="Tài liệu"
           />
         </EuiButtonEmpty>
 
@@ -217,7 +217,7 @@ class HeaderHelpMenuUI extends Component<Props, State> {
         <EuiButtonEmpty href={helpSupportUrl} target="_blank" size="xs" flush="left">
           <FormattedMessage
             id="core.ui.chrome.headerGlobalNav.helpMenuAskOpenSearchTitle"
-            defaultMessage="Community"
+            defaultMessage="Cộng đồng"
           />
         </EuiButtonEmpty>
 
@@ -228,7 +228,7 @@ class HeaderHelpMenuUI extends Component<Props, State> {
             <EuiButtonEmpty href={surveyLink} target="_blank" size="xs" flush="left">
               <FormattedMessage
                 id="core.ui.chrome.headerGlobalNav.helpMenuFeedbackSurveyTitle"
-                defaultMessage="Give feedback"
+                defaultMessage="Đưa phản hồi"
               />
             </EuiButtonEmpty>
             <EuiSpacer size="xs" />
@@ -246,7 +246,7 @@ class HeaderHelpMenuUI extends Component<Props, State> {
         >
           <FormattedMessage
             id="core.ui.chrome.headerGlobalNav.helpMenuOpenGitHubIssueTitle"
-            defaultMessage="Open an issue in GitHub"
+            defaultMessage="Tạo một vấn đề trên Github"
           />
         </EuiButtonEmpty>
       </Fragment>
@@ -258,7 +258,7 @@ class HeaderHelpMenuUI extends Component<Props, State> {
 
       const getFeedbackText = () =>
         i18n.translate('core.ui.chrome.headerGlobalNav.helpMenuGiveFeedbackOnApp', {
-          defaultMessage: 'Give feedback on {appName}',
+          defaultMessage: 'Đưa phản hồi về {appName}',
           values: { appName: helpExtension.appName },
         });
 
@@ -272,7 +272,7 @@ class HeaderHelpMenuUI extends Component<Props, State> {
                 index,
                 <FormattedMessage
                   id="core.ui.chrome.headerGlobalNav.helpMenuDocumentation"
-                  defaultMessage="Documentation"
+                  defaultMessage="Tài liệu"
                 />,
                 index < links.length - 1,
                 {

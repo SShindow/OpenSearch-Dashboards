@@ -108,7 +108,7 @@ export const Header = ({
               >
                 <FormattedMessage
                   id="savedObjectsManagement.view.deleteItemButtonLabel"
-                  defaultMessage="Delete {title}"
+                  defaultMessage="Xóa {title}"
                   values={{ title: type }}
                 />
               </EuiButton>

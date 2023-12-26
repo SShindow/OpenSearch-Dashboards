@@ -344,7 +344,7 @@ export class Table extends PureComponent<TableProps, TableState> {
       >
         <FormattedMessage
           id="savedObjectsManagement.objectsTable.table.exportPopoverButtonLabel"
-          defaultMessage="Export"
+          defaultMessage="Xuất"
         />
       </EuiButton>
     );
@@ -376,7 +376,7 @@ export class Table extends PureComponent<TableProps, TableState> {
             >
               <FormattedMessage
                 id="savedObjectsManagement.objectsTable.table.deleteButtonLabel"
-                defaultMessage="Delete"
+                defaultMessage="Xóa"
               />
             </EuiButton>,
             <EuiPopover
@@ -389,7 +389,7 @@ export class Table extends PureComponent<TableProps, TableState> {
                 label={
                   <FormattedMessage
                     id="savedObjectsManagement.objectsTable.exportObjectsConfirmModal.exportOptionsLabel"
-                    defaultMessage="Options"
+                    defaultMessage="Tùy chọn"
                   />
                 }
               >
@@ -398,7 +398,7 @@ export class Table extends PureComponent<TableProps, TableState> {
                   label={
                     <FormattedMessage
                       id="savedObjectsManagement.objectsTable.exportObjectsConfirmModal.includeReferencesDeepLabel"
-                      defaultMessage="Include related objects"
+                      defaultMessage="Bao gồm các đối tượng liên quan"
                     />
                   }
                   checked={this.state.isIncludeReferencesDeepChecked}
@@ -409,7 +409,7 @@ export class Table extends PureComponent<TableProps, TableState> {
                 <EuiButton key="exportSO" iconType="exportAction" onClick={this.onExportClick} fill>
                   <FormattedMessage
                     id="savedObjectsManagement.objectsTable.table.exportButtonLabel"
-                    defaultMessage="Export"
+                    defaultMessage="Xuất"
                   />
                 </EuiButton>
               </EuiFormRow>

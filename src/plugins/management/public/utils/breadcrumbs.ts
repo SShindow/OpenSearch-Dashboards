@@ -32,7 +32,7 @@ import { i18n } from '@osd/i18n';
 
 export const MANAGEMENT_BREADCRUMB = {
   text: i18n.translate('management.breadcrumb', {
-    defaultMessage: 'Dashboards Management',
+    defaultMessage: 'Quản lý trang tổng quan',
   }),
   href: '/',
 };

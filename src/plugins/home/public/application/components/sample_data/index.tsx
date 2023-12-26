@@ -62,25 +62,25 @@ export function SampleDataCard({ urlBasePath, onDecline, onConfirm }: Props) {
       image={cardGraphicURL}
       textAlign="left"
       title={
-        <FormattedMessage id="home.letsStartTitle" defaultMessage="Start by adding your data" />
+        <FormattedMessage id="home.letsStartTitle" defaultMessage="Bắt đầu bằng cách thêm dữ liệu của bạn" />
       }
       description={
         <FormattedMessage
           id="home.letsStartDescription"
-          defaultMessage="Add data to your cluster from any source, then analyze and visualize it in real time. Use our solutions to add search anywhere, observe your ecosystem, and protect against security threats."
+          defaultMessage="Thêm dữ liệu vào cụm của bạn từ bất kỳ nguồn nào, sau đó phân tích và trực quan dữ liệu đó theo thời gian thực. Sử dụng các giải pháp của chúng tôi để thêm tính năng tìm kiếm ở mọi nơi, quan sát hệ sinh thái của bạn và bảo vệ khỏi các mối đe dọa bảo mật."
         />
       }
       footer={
         <footer>
           <EuiButton fill className="homWelcome__footerAction" onClick={onConfirm}>
-            <FormattedMessage id="home.tryButtonLabel" defaultMessage="Add data" />
+            <FormattedMessage id="home.tryButtonLabel" defaultMessage="Thêm dữ liệu" />
           </EuiButton>
           <EuiButtonEmpty
             className="homWelcome__footerAction"
             onClick={onDecline}
             data-test-subj="skipWelcomeScreen"
           >
-            <FormattedMessage id="home.exploreButtonLabel" defaultMessage="Explore on my own" />
+            <FormattedMessage id="home.exploreButtonLabel" defaultMessage="Khám phá theo cách riêng của tôi" />
           </EuiButtonEmpty>
         </footer>
       }

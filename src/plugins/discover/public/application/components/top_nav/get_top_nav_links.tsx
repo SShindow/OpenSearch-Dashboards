@@ -62,7 +62,7 @@ export const getTopNavLinks = (
       defaultMessage: 'Save',
     }),
     description: i18n.translate('discover.localMenu.saveSearchDescription', {
-      defaultMessage: 'Save Search',
+      defaultMessage: 'Lưu tìm kiếm',
     }),
     testId: 'discoverSaveButton',
     run: async () => {

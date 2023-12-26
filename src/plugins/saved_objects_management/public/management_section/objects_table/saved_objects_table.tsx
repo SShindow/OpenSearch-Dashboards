@@ -609,7 +609,7 @@ export class SavedObjectsTable extends Component<SavedObjectsTableProps, SavedOb
           title={
             <FormattedMessage
               id="savedObjectsManagement.objectsTable.deleteSavedObjectsConfirmModalTitle"
-              defaultMessage="Delete saved objects"
+              defaultMessage="Xóa các đối tượng đã lưu"
             />
           }
           onCancel={onCancel}
@@ -630,7 +630,7 @@ export class SavedObjectsTable extends Component<SavedObjectsTableProps, SavedOb
             ) : (
               <FormattedMessage
                 id="savedObjectsManagement.objectsTable.deleteSavedObjectsConfirmModal.deleteButtonLabel"
-                defaultMessage="Delete"
+                defaultMessage="Xóa"
               />
             )
           }
@@ -712,7 +712,7 @@ export class SavedObjectsTable extends Component<SavedObjectsTableProps, SavedOb
           <EuiModalHeaderTitle>
             <FormattedMessage
               id="savedObjectsManagement.objectsTable.exportObjectsConfirmModalTitle"
-              defaultMessage="Export {filteredItemCount, plural, one{# object} other {# objects}}"
+              defaultMessage="Xuất {filteredItemCount, plural, one{# object} other {# objects}}"
               values={{
                 filteredItemCount,
               }}
@@ -752,7 +752,7 @@ export class SavedObjectsTable extends Component<SavedObjectsTableProps, SavedOb
             label={
               <FormattedMessage
                 id="savedObjectsManagement.objectsTable.exportObjectsConfirmModal.includeReferencesDeepLabel"
-                defaultMessage="Include related objects"
+                defaultMessage="Bao gồm các đối tượng liên quan"
               />
             }
             checked={isIncludeReferencesDeepChecked}
@@ -775,7 +775,7 @@ export class SavedObjectsTable extends Component<SavedObjectsTableProps, SavedOb
                   <EuiButton fill onClick={this.onExportAll}>
                     <FormattedMessage
                       id="savedObjectsManagement.objectsTable.exportObjectsConfirmModal.exportAllButtonLabel"
-                      defaultMessage="Export all"
+                      defaultMessage="Xuất tất cả"
                     />
                   </EuiButton>
                 </EuiFlexItem>

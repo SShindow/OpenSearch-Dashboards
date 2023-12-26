@@ -40,7 +40,7 @@ export const CallOuts = () => {
         title={
           <FormattedMessage
             id="advancedSettings.callOutCautionTitle"
-            defaultMessage="Caution: You can break stuff here"
+            defaultMessage="Thận trọng: Bạn có thể sẽ phá vỡ mọi thứ ở đây"
           />
         }
         color="warning"
@@ -49,12 +49,7 @@ export const CallOuts = () => {
         <p>
           <FormattedMessage
             id="advancedSettings.callOutCautionDescription"
-            defaultMessage="Be careful in here, these settings are for very advanced users only.
-            Tweaks you make here can break large portions of OpenSearch Dashboards.
-            Some of these settings may be undocumented, unsupported or experimental.
-            If a field has a default value, blanking the field will reset it to its default which may be
-            unacceptable given other configuration directives.
-            Deleting a custom setting will permanently remove it from OpenSearch Dashboards's config."
+            defaultMessage="Hãy cẩn thận ở đây, những cài đặt này chỉ dành cho người dùng rất cao cấp. Những chỉnh sửa bạn thực hiện ở đây có thể làm hỏng phần lớn Bảng thông tin OpenSearch. Một số cài đặt này có thể không có giấy tờ, không được hỗ trợ hoặc mang tính thử nghiệm. Nếu một trường có giá trị mặc định, việc xóa trường sẽ đặt lại giá trị đó về giá trị mặc định, điều này có thể không được chấp nhận đối với các chỉ thị cấu hình khác. Việc xóa cài đặt tùy chỉnh sẽ xóa vĩnh viễn cài đặt đó khỏi cấu hình của Bảng điều khiển OpenSearch."
           />
         </p>
       </EuiCallOut>

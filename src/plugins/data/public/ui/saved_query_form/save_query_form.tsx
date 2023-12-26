@@ -243,7 +243,7 @@ export function SaveQueryForm({
       <EuiModalFooter>
         <EuiButtonEmpty onClick={onClose} data-test-subj="savedQueryFormCancelButton">
           {i18n.translate('data.search.searchBar.savedQueryFormCancelButtonText', {
-            defaultMessage: 'Cancel',
+            defaultMessage: 'Hủy bỏ',
           })}
         </EuiButtonEmpty>
 

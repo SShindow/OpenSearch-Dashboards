@@ -87,7 +87,7 @@ export const TimeField: React.FC<TimeFieldProps> = ({
                 <EuiLink onClick={fetchTimeFields}>
                   <FormattedMessage
                     id="indexPatternManagement.createIndexPattern.stepTime.refreshButton"
-                    defaultMessage="Refresh"
+                    defaultMessage="Làm mới"
                   />
                 </EuiLink>
               </EuiText>

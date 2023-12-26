@@ -91,7 +91,7 @@ export class VisualizeEmbeddableFactory
   >;
 
   public readonly savedObjectMetaData: SavedObjectMetaData<VisualizationAttributes> = {
-    name: i18n.translate('visualizations.savedObjectName', { defaultMessage: 'Visualization' }),
+    name: i18n.translate('visualizations.savedObjectName', { defaultMessage: 'Trực quan' }),
     includeFields: ['visState'],
     type: 'visualization',
     getIconForSavedObject: (savedObject) => {

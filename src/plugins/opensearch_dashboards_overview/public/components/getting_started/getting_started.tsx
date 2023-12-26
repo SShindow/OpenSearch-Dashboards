@@ -76,7 +76,7 @@ export const GettingStarted: FC<Props> = ({ addBasePath, isDarkTheme, apps }) =>
               <h2 id="osdOverviewGettingStarted__title">
                 <FormattedMessage
                   id="opensearchDashboardsOverview.gettingStarted.title"
-                  defaultMessage="Getting started with OpenSearch Dashboards"
+                  defaultMessage="Bắt đầu với Bảng điều khiển OpenSearch"
                 />
               </h2>
             </EuiTitle>
@@ -87,7 +87,7 @@ export const GettingStarted: FC<Props> = ({ addBasePath, isDarkTheme, apps }) =>
               <p>
                 <FormattedMessage
                   id="opensearchDashboardsOverview.gettingStarted.description"
-                  defaultMessage="OpenSearch Dashboards empowers you to visualize your data, your way.  Start with one question, and see where the answer leads you."
+                  defaultMessage="Bảng thông tin OpenSearch cho phép bạn trực quan dữ liệu theo cách của mình. Bắt đầu bằng một câu hỏi và xem câu trả lời sẽ dẫn bạn đến đâu."
                 />
               </p>
             </EuiText>
@@ -120,7 +120,7 @@ export const GettingStarted: FC<Props> = ({ addBasePath, isDarkTheme, apps }) =>
                 href={addBasePath('/app/management/opensearch-dashboards/indexPatterns')}
               >
                 <FormattedMessage
-                  defaultMessage="Add your data"
+                  defaultMessage="Thêm dữ liệu của bạn"
                   id="opensearchDashboardsOverview.gettingStarted.addDataButtonLabel"
                 />
               </EuiButton>

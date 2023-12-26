@@ -91,7 +91,7 @@ export const Header: React.FC<HeaderProps> = ({
         <h2>
           <FormattedMessage
             id="indexPatternManagement.createIndexPattern.stepHeader"
-            defaultMessage="Step {currentStepNumber} of {totalStepNumber}: Define an index pattern"
+            defaultMessage="Bước {currentStepNumber} trên {totalStepNumber}: Xác định mẫu chỉ mục"
             values={{
               currentStepNumber: stepInfo.currentStepNumber,
               totalStepNumber: stepInfo.totalStepNumber,
@@ -125,7 +125,7 @@ export const Header: React.FC<HeaderProps> = ({
                   label={
                     <FormattedMessage
                       id="indexPatternManagement.createIndexPattern.includeSystemIndicesToggleSwitchLabel"
-                      defaultMessage="Include system and hidden indices"
+                      defaultMessage="Bao gồm hệ thống và các chỉ số ẩn"
                     />
                   }
                   id="checkboxShowSystemIndices"
@@ -149,7 +149,7 @@ export const Header: React.FC<HeaderProps> = ({
             >
               <FormattedMessage
                 id="indexPatternManagement.createIndexPattern.step.nextStepButton"
-                defaultMessage="Next step"
+                defaultMessage="Bước tiếp theo"
               />
             </EuiButton>
           </EuiFormRow>
@@ -172,7 +172,7 @@ const renderIndexPatternInput = (
       label={
         <FormattedMessage
           id="indexPatternManagement.createIndexPattern.step.indexPatternLabel"
-          defaultMessage="Index pattern name"
+          defaultMessage="Tên mẫu chỉ mục"
         />
       }
       isInvalid={isInputInvalid}
@@ -181,12 +181,12 @@ const renderIndexPatternInput = (
         <>
           <FormattedMessage
             id="indexPatternManagement.createIndexPattern.step.indexPattern.allowLabel"
-            defaultMessage="Use an asterisk ({asterisk}) to match multiple indices."
+            defaultMessage="Sử dụng dấu hoa thị ({dấu hoa thị}) để khớp với nhiều chỉ mục."
             values={{ asterisk: <strong>*</strong> }}
           />{' '}
           <FormattedMessage
             id="indexPatternManagement.createIndexPattern.step.indexPattern.disallowLabel"
-            defaultMessage="Spaces and the characters {characterList} are not allowed."
+            defaultMessage="Không được phép có dấu cách và ký tự {characterList}."
             values={{ characterList: <strong>{characterList}</strong> }}
           />
         </>
@@ -225,7 +225,7 @@ const renderDataSourceAndIndexPatternInput = (
           label={
             <FormattedMessage
               id="indexPatternManagement.createIndexPattern.step.dataSourceLabel"
-              defaultMessage="Data Source"
+              defaultMessage="Nguồn dữ liệu"
             />
           }
           isInvalid={isInputInvalid}
@@ -236,7 +236,7 @@ const renderDataSourceAndIndexPatternInput = (
             placeholder={i18n.translate(
               'indexPatternManagement.createIndexPattern.step.dataSourcePlaceholder',
               {
-                defaultMessage: 'Data source name',
+                defaultMessage: 'Tên nguồn dữ liệu',
               }
             )}
             value={dataSourceTitle}

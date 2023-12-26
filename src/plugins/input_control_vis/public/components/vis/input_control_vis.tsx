@@ -137,7 +137,7 @@ export class InputControlVis extends Component<InputControlVisProps> {
           >
             <FormattedMessage
               id="inputControl.vis.inputControlVis.applyChangesButtonLabel"
-              defaultMessage="Apply changes"
+              defaultMessage="Áp dụng thay đổi"
             />
           </EuiButton>
         </EuiFlexItem>
@@ -149,7 +149,7 @@ export class InputControlVis extends Component<InputControlVisProps> {
           >
             <FormattedMessage
               id="inputControl.vis.inputControlVis.cancelChangesButtonLabel"
-              defaultMessage="Cancel changes"
+              defaultMessage="Hủy thay đổi"
             />
           </EuiButtonEmpty>
         </EuiFlexItem>
@@ -161,7 +161,7 @@ export class InputControlVis extends Component<InputControlVisProps> {
           >
             <FormattedMessage
               id="inputControl.vis.inputControlVis.clearFormButtonLabel"
-              defaultMessage="Clear form"
+              defaultMessage="Xóa form"
             />
           </EuiButtonEmpty>
         </EuiFlexItem>

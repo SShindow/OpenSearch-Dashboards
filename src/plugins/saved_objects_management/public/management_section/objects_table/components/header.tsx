@@ -58,7 +58,7 @@ export const Header = ({
           <h1>
             <FormattedMessage
               id="savedObjectsManagement.objectsTable.header.savedObjectsTitle"
-              defaultMessage="Saved Objects"
+              defaultMessage="Đối tượng đã lưu"
             />
           </h1>
         </EuiTitle>
@@ -75,7 +75,7 @@ export const Header = ({
             >
               <FormattedMessage
                 id="savedObjectsManagement.objectsTable.header.exportButtonLabel"
-                defaultMessage="Export {filteredCount, plural, one{# object} other {# objects}}"
+                defaultMessage="Xuất {filteredCount, plural, one{# đối tượng} other {# đối tượng}}"
                 values={{
                   filteredCount,
                 }}
@@ -91,7 +91,7 @@ export const Header = ({
             >
               <FormattedMessage
                 id="savedObjectsManagement.objectsTable.header.importButtonLabel"
-                defaultMessage="Import"
+                defaultMessage="Nhập"
               />
             </EuiButtonEmpty>
           </EuiFlexItem>
@@ -99,7 +99,7 @@ export const Header = ({
             <EuiButtonEmpty size="s" iconType="refresh" onClick={onRefresh}>
               <FormattedMessage
                 id="savedObjectsManagement.objectsTable.header.refreshButtonLabel"
-                defaultMessage="Refresh"
+                defaultMessage="Làm mới"
               />
             </EuiButtonEmpty>
           </EuiFlexItem>
@@ -112,7 +112,7 @@ export const Header = ({
         <EuiTextColor color="subdued">
           <FormattedMessage
             id="savedObjectsManagement.objectsTable.howToDeleteSavedObjectsDescription"
-            defaultMessage="Manage and share your saved objects. To edit the underlying data of an object, go to its associated application."
+            defaultMessage="Quản lý và chia sẻ các đối tượng đã lưu của bạn. Để chỉnh sửa dữ liệu cơ bản của một đối tượng, hãy chuyển đến ứng dụng được liên kết với nó."
           />
         </EuiTextColor>
       </p>

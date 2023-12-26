@@ -64,7 +64,7 @@ export const ManageData: FC<Props> = ({ addBasePath, features }) => {
             <h2 id="osdOverviewDataManage__title">
               <FormattedMessage
                 id="opensearchDashboardsOverview.manageData.sectionTitle"
-                defaultMessage="Manage your data"
+                defaultMessage="Quản lý dữ liệu của bạn"
               />
             </h2>
           </EuiTitle>

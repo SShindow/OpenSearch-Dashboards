@@ -60,7 +60,7 @@ const SAMPLE_DATA_TAB_ID = 'sampleData';
 
 const homeTitle = i18n.translate('home.breadcrumbs.homeTitle', { defaultMessage: 'Home' });
 const addDataTitle = i18n.translate('home.breadcrumbs.addDataTitle', {
-  defaultMessage: 'Add data',
+  defaultMessage: 'Thêm dữ liệu',
 });
 const localCluster = i18n.translate('home.dataSource.localCluster', {
   defaultMessage: 'Local Cluster',
@@ -317,7 +317,7 @@ class TutorialDirectoryUi extends React.Component {
               <h1>
                 <FormattedMessage
                   id="home.tutorial.addDataToOpenSearchDashboardsTitle"
-                  defaultMessage="Add sample data"
+                  defaultMessage="Thêm dữ liệu mẫu"
                 />
               </h1>
             </EuiTitle>

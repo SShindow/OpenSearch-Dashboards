@@ -137,12 +137,12 @@ export class UrlPanelContent extends Component<Props, State> {
                 {this.props.isEmbedded ? (
                   <FormattedMessage
                     id="share.urlPanel.copyIframeCodeButtonLabel"
-                    defaultMessage="Copy iFrame code"
+                    defaultMessage="Sao chép mã iFrame"
                   />
                 ) : (
                   <FormattedMessage
                     id="share.urlPanel.copyLinkButtonLabel"
-                    defaultMessage="Copy link"
+                    defaultMessage="Sao chép đường dẫn"
                   />
                 )}
               </EuiButton>
@@ -326,7 +326,7 @@ export class UrlPanelContent extends Component<Props, State> {
       {
         id: ExportUrlAsType.EXPORT_URL_AS_SNAPSHOT,
         label: this.renderWithIconTip(
-          <FormattedMessage id="share.urlPanel.snapshotLabel" defaultMessage="Snapshot" />,
+          <FormattedMessage id="share.urlPanel.snapshotLabel" defaultMessage="Ảnh chụp nhanh" />,
           <FormattedMessage
             id="share.urlPanel.snapshotDescription"
             defaultMessage="Snapshot URLs encode the current state of the {objectType} in the URL itself.
@@ -340,7 +340,7 @@ export class UrlPanelContent extends Component<Props, State> {
         id: ExportUrlAsType.EXPORT_URL_AS_SAVED_OBJECT,
         disabled: this.isNotSaved(),
         label: this.renderWithIconTip(
-          <FormattedMessage id="share.urlPanel.savedObjectLabel" defaultMessage="Saved object" />,
+          <FormattedMessage id="share.urlPanel.savedObjectLabel" defaultMessage="Đối tượng đã lưu" />,
           <FormattedMessage
             id="share.urlPanel.savedObjectDescription"
             defaultMessage="You can share this URL with people to let them load the most recent saved version of this {objectType}."
@@ -376,7 +376,7 @@ export class UrlPanelContent extends Component<Props, State> {
         label={
           <FormattedMessage
             id="share.urlPanel.generateLinkAsLabel"
-            defaultMessage="Generate the link as"
+            defaultMessage="Tạo liên kết dưới dạng"
           />
         }
         helpText={generateLinkAsHelp}
@@ -398,7 +398,7 @@ export class UrlPanelContent extends Component<Props, State> {
       return;
     }
     const shortUrlLabel = (
-      <FormattedMessage id="share.urlPanel.shortUrlLabel" defaultMessage="Short URL" />
+      <FormattedMessage id="share.urlPanel.shortUrlLabel" defaultMessage="URL Rút gọn" />
     );
     const switchLabel = this.state.isCreatingShortUrl ? (
       <span>

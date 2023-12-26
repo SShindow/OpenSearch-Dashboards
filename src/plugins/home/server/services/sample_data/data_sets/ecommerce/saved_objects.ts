@@ -89,7 +89,7 @@ export const getSavedObjects = (): SavedObject[] => [
         defaultMessage: '[eCommerce] Markdown',
       }),
       visState:
-        '{"title":"[eCommerce] Markdown","type":"markdown","params":{"fontSize":12,"openLinksInNewTab":false,"markdown":"### Sample eCommerce Data\\nThis dashboard contains sample data for you to play with. You can view it, search it, and interact with the visualizations. For more information about OpenSearch Dashboards, check our [docs](https://opensearch.org/docs/latest/dashboards/index/)."},"aggs":[]}',
+        '{"title":"[eCommerce] Markdown","type":"markdown","params":{"fontSize":12,"openLinksInNewTab":false,"markdown":"### Dữ liệu thương mại điện tử mẫu\\nTrang tổng quan này chứa dữ liệu mẫu để bạn thử nghiệm. Bạn có thể xem nó, tìm kiếm nó và tương tác với các hình ảnh trực quan. Để biết thêm thông tin về Trang tổng quan OpenSearch, hãy kiểm tra [tài liệu của chúng tôi](https://opensearch.org/docs/latest/dashboards/index/)."},"aggs":[]}',
       uiStateJSON: '{}',
       description: '',
       version: 1,
@@ -381,11 +381,11 @@ export const getSavedObjects = (): SavedObject[] => [
     },
     attributes: {
       title: i18n.translate('home.sampleData.ecommerceSpec.revenueDashboardTitle', {
-        defaultMessage: '[eCommerce] Revenue Dashboard',
+        defaultMessage: '[Thương mại điện tử] Bảng điều khiển doanh thu',
       }),
       hits: 0,
       description: i18n.translate('home.sampleData.ecommerceSpec.revenueDashboardDescription', {
-        defaultMessage: 'Analyze mock eCommerce orders and revenue',
+        defaultMessage: 'Analyze các đơn đặt hàng và doanh thu thương mại điện tử mô phỏng',
       }),
       panelsJSON:
         '[{"embeddableConfig":{},"gridData":{"x":12,"y":18,"w":36,"h":10,"i":"1"},"panelIndex":"1","version":"7.0.0-alpha1","panelRefName":"panel_0"},{"embeddableConfig":{"vis":{"legendOpen":false}},"gridData":{"x":12,"y":7,"w":12,"h":11,"i":"2"},"panelIndex":"2","version":"7.0.0-alpha1","panelRefName":"panel_1"},{"embeddableConfig":{},"gridData":{"x":0,"y":0,"w":18,"h":7,"i":"3"},"panelIndex":"3","version":"7.0.0-alpha1","panelRefName":"panel_2"},{"embeddableConfig":{},"gridData":{"x":18,"y":0,"w":30,"h":7,"i":"4"},"panelIndex":"4","version":"7.0.0-alpha1","panelRefName":"panel_3"},{"embeddableConfig":{},"gridData":{"x":0,"y":28,"w":48,"h":11,"i":"5"},"panelIndex":"5","version":"7.0.0-alpha1","panelRefName":"panel_4"},{"embeddableConfig":{},"gridData":{"x":0,"y":18,"w":12,"h":10,"i":"6"},"panelIndex":"6","version":"7.0.0-alpha1","panelRefName":"panel_5"},{"embeddableConfig":{},"gridData":{"x":0,"y":7,"w":12,"h":11,"i":"7"},"panelIndex":"7","version":"7.0.0-alpha1","panelRefName":"panel_6"},{"embeddableConfig":{"vis":{"legendOpen":false}},"gridData":{"x":24,"y":7,"w":12,"h":11,"i":"8"},"panelIndex":"8","version":"7.0.0-alpha1","panelRefName":"panel_7"},{"embeddableConfig":{"vis":{"legendOpen":false}},"gridData":{"x":36,"y":7,"w":12,"h":11,"i":"9"},"panelIndex":"9","version":"7.0.0-alpha1","panelRefName":"panel_8"},{"embeddableConfig":{},"gridData":{"x":0,"y":54,"w":48,"h":18,"i":"10"},"panelIndex":"10","version":"7.0.0-alpha1","panelRefName":"panel_9"},{"embeddableConfig":{"mapZoom":2,"mapCenter":[28.304380682962783,-22.148437500000004]},"gridData":{"x":0,"y":39,"w":24,"h":15,"i":"11"},"panelIndex":"11","version":"7.0.0-alpha1","panelRefName":"panel_10"},{"embeddableConfig":{},"gridData":{"x":24,"y":39,"w":24,"h":15,"i":"12"},"panelIndex":"12","version":"7.0.0-alpha1","panelRefName":"panel_11"}]',

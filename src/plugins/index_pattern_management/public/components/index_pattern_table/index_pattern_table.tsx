@@ -222,7 +222,7 @@ export const IndexPatternTable = ({ canSave, history }: Props) => {
     <CreateButton options={creationOptions}>
       <FormattedMessage
         id="indexPatternManagement.indexPatternTable.createBtn"
-        defaultMessage="Create index pattern"
+        defaultMessage="Tạo mẫu chỉ mục"
       />
     </CreateButton>
   ) : (
@@ -273,7 +273,7 @@ export const IndexPatternTable = ({ canSave, history }: Props) => {
               <p>
                 <FormattedMessage
                   id="indexPatternManagement.indexPatternTable.indexPatternExplanation"
-                  defaultMessage="Create and manage the index patterns that help you retrieve your data from OpenSearch."
+                  defaultMessage="Tạo và quản lý các mẫu chỉ mục giúp bạn truy xuất dữ liệu của mình từ OpenSearch."
                 />
               </p>
             </EuiText>

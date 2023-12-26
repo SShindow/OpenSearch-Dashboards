@@ -61,14 +61,14 @@ export const ManagementLandingPage = ({ setBreadcrumbs }: ManagementLandingPageP
             <h1>
               <FormattedMessage
                 id="management.landing.header"
-                defaultMessage="Welcome to Dashboards Management"
+                defaultMessage="Chào mừng đến với quản lý bảng điều khiển"
               />
             </h1>
           </EuiTitle>
           <EuiText>
             <FormattedMessage
               id="management.landing.subhead"
-              defaultMessage="Manage your index patterns, saved objects, OpenSearch Dashboards settings, and more."
+              defaultMessage="Quản lý chỉ mục, mẫu chỉ mục, đối tượng đã lưu, cài đặt Bảng thông tin tìm kiếm mở, v.v."
             />
           </EuiText>
         </div>
@@ -79,7 +79,7 @@ export const ManagementLandingPage = ({ setBreadcrumbs }: ManagementLandingPageP
           <p>
             <FormattedMessage
               id="management.landing.text"
-              defaultMessage="A complete list of apps is in the menu on the left."
+              defaultMessage="Danh sách đầy đủ các ứng dụng nằm trong menu bên trái."
             />
           </p>
         </EuiText>

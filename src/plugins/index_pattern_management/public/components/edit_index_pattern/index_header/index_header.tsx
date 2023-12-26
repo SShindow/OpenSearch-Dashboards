@@ -44,14 +44,14 @@ interface IndexHeaderProps {
 const setDefaultAriaLabel = i18n.translate(
   'indexPatternManagement.editIndexPattern.setDefaultAria',
   {
-    defaultMessage: 'Set as default index.',
+    defaultMessage: 'Đặt làm chỉ mục mặc định',
   }
 );
 
 const setDefaultTooltip = i18n.translate(
   'indexPatternManagement.editIndexPattern.setDefaultTooltip',
   {
-    defaultMessage: 'Set as default index.',
+    defaultMessage: 'Đặt làm chỉ mục mặc định',
   }
 );
 
@@ -60,15 +60,15 @@ const refreshAriaLabel = i18n.translate('indexPatternManagement.editIndexPattern
 });
 
 const refreshTooltip = i18n.translate('indexPatternManagement.editIndexPattern.refreshTooltip', {
-  defaultMessage: 'Refresh field list.',
+  defaultMessage: 'Làm mới danh sách vùng.',
 });
 
 const removeAriaLabel = i18n.translate('indexPatternManagement.editIndexPattern.removeAria', {
-  defaultMessage: 'Remove index pattern.',
+  defaultMessage: 'Xóa chỉ mục mẫu.',
 });
 
 const removeTooltip = i18n.translate('indexPatternManagement.editIndexPattern.removeTooltip', {
-  defaultMessage: 'Remove index pattern.',
+  defaultMessage: 'Xóa chỉ mục mẫu.',
 });
 
 export function IndexHeader({

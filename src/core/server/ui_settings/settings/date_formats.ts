@@ -49,11 +49,11 @@ export const getDateFormatSettings = (): Record<string, UiSettingsParams> => {
   return {
     dateFormat: {
       name: i18n.translate('core.ui_settings.params.dateFormatTitle', {
-        defaultMessage: 'Date format',
+        defaultMessage: 'Định dạng ngày tháng',
       }),
       value: 'MMM D, YYYY @ HH:mm:ss.SSS',
       description: i18n.translate('core.ui_settings.params.dateFormatText', {
-        defaultMessage: 'When displaying a pretty formatted date, use this {formatLink}',
+        defaultMessage: 'Khi hiển thị một ngày được định dạng đẹp, hãy sử dụng định dạng này {formatLink}',
         description:
           'Part of composite text: core.ui_settings.params.dateFormatText + ' +
           'core.ui_settings.params.dateFormat.optionsLinkText',
@@ -70,12 +70,12 @@ export const getDateFormatSettings = (): Record<string, UiSettingsParams> => {
     },
     'dateFormat:tz': {
       name: i18n.translate('core.ui_settings.params.dateFormat.timezoneTitle', {
-        defaultMessage: 'Timezone for date formatting',
+        defaultMessage: 'Múi giờ để định dạng ngày',
       }),
       value: 'Browser',
       description: i18n.translate('core.ui_settings.params.dateFormat.timezoneText', {
         defaultMessage:
-          'Which timezone should be used. {defaultOption} will use the timezone detected by your browser.',
+          'Múi giờ nào nên được sử dụng. {defaultOption} sẽ sử dụng múi giờ được trình duyệt của bạn phát hiện.',
         values: {
           defaultOption: '"Browser"',
         },
@@ -101,7 +101,7 @@ export const getDateFormatSettings = (): Record<string, UiSettingsParams> => {
     },
     'dateFormat:scaled': {
       name: i18n.translate('core.ui_settings.params.dateFormat.scaledTitle', {
-        defaultMessage: 'Scaled date format',
+        defaultMessage: 'Định dạng ngày được chia tỷ lệ',
       }),
       type: 'json',
       value: `[
@@ -114,9 +114,9 @@ export const getDateFormatSettings = (): Record<string, UiSettingsParams> => {
 ]`,
       description: i18n.translate('core.ui_settings.params.dateFormat.scaledText', {
         defaultMessage:
-          'Values that define the format used in situations where time-based ' +
-          'data is rendered in order, and formatted timestamps should adapt to the ' +
-          'interval between measurements. Keys are {intervalsLink}.',
+          'Các giá trị xác định định dạng được sử dụng trong các trường hợp dựa trên thời gian ' +
+          'dữ liệu được hiển thị theo thứ tự và dấu thời gian được định dạng phải thích ứng với ' +
+          'khoảng thời gian giữa các lần đo. Giá trị then chốt là {intervalsLink}.',
         description:
           'Part of composite text: core.ui_settings.params.dateFormat.scaledText + ' +
           'core.ui_settings.params.dateFormat.scaled.intervalsLinkText',
@@ -133,11 +133,11 @@ export const getDateFormatSettings = (): Record<string, UiSettingsParams> => {
     },
     'dateFormat:dow': {
       name: i18n.translate('core.ui_settings.params.dateFormat.dayOfWeekTitle', {
-        defaultMessage: 'Day of week',
+        defaultMessage: 'Ngày trong tuần',
       }),
       value: defaultWeekday,
       description: i18n.translate('core.ui_settings.params.dateFormat.dayOfWeekText', {
-        defaultMessage: 'What day should weeks start on?',
+        defaultMessage: 'Tuần nên bắt đầu vào ngày nào?',
       }),
       type: 'select',
       options: weekdays,
@@ -159,11 +159,11 @@ export const getDateFormatSettings = (): Record<string, UiSettingsParams> => {
     },
     dateNanosFormat: {
       name: i18n.translate('core.ui_settings.params.dateNanosFormatTitle', {
-        defaultMessage: 'Date with nanoseconds format',
+        defaultMessage: 'Ngày giờ có định dạng nano giây',
       }),
       value: 'MMM D, YYYY @ HH:mm:ss.SSSSSSSSS',
       description: i18n.translate('core.ui_settings.params.dateNanosFormatText', {
-        defaultMessage: 'Used for the {dateNanosLink} datatype of OpenSearch',
+        defaultMessage: 'Được sử dụng cho kiểu dữ liệu {dateNanosLink} của OpenSearch',
         values: {
           dateNanosLink:
             '<a href="https://opensearch.org/docs/latest/opensearch/units/" target="_blank" rel="noopener noreferrer">' +

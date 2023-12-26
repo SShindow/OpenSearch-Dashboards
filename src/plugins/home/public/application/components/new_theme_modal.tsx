@@ -42,7 +42,7 @@ export const NewThemeModal: FC<Props> = ({ addBasePath, onClose }) => {
         <EuiModalHeaderTitle>
           <FormattedMessage
             id="home.newThemeModal.title"
-            defaultMessage="Introducing new OpenSearch Dashboards look & feel"
+            defaultMessage="Giới thiệu giao diện Trang tổng quan OpenSearch mới"
           />
         </EuiModalHeaderTitle>
       </EuiModalHeader>
@@ -52,8 +52,7 @@ export const NewThemeModal: FC<Props> = ({ addBasePath, onClose }) => {
           <EuiText>
             <FormattedMessage
               id="home.newThemeModal.previewDescription.previewDetail"
-              defaultMessage="You are now previewing the newest OpenSearch Dashboards theme with improved light and dark
-            modes. You or your administrator can change to the previous theme by visiting {advancedSettingsLink}."
+              defaultMessage="Bạn hiện đang xem trước chủ đề Bảng thông tin OpenSearch mới nhất với các chế độ sáng và tối được cải tiến. Bạn hoặc quản trị viên của bạn có thể thay đổi chủ đề trước đó bằng cách truy cập {advancedSettingsLink}."
               values={{
                 advancedSettingsLink: (
                   <EuiLink
@@ -61,7 +60,7 @@ export const NewThemeModal: FC<Props> = ({ addBasePath, onClose }) => {
                   >
                     <FormattedMessage
                       id="home.newThemeModal.previewDescription.advancedSettingsLinkText"
-                      defaultMessage="Advanced Settings"
+                      defaultMessage="Cài đặt nâng cao"
                     />
                   </EuiLink>
                 ),
@@ -75,7 +74,7 @@ export const NewThemeModal: FC<Props> = ({ addBasePath, onClose }) => {
             <EuiImage
               url={addBasePath('/plugins/home/assets/new_theme_light.png')}
               alt={i18n.translate('home.newThemeModal.lightModeImageAltDescription', {
-                defaultMessage: 'screenshot of new theme in light mode',
+                defaultMessage: 'ảnh chụp màn hình của màu chủ đề mới trong chế độ sáng',
               })}
             />
           </EuiFlexItem>
@@ -83,7 +82,7 @@ export const NewThemeModal: FC<Props> = ({ addBasePath, onClose }) => {
             <EuiImage
               url={addBasePath('/plugins/home/assets/new_theme_dark.png')}
               alt={i18n.translate('home.newThemeModal.darkModeImageAltDescription', {
-                defaultMessage: 'screenshot of new theme in dark mode',
+                defaultMessage: 'ảnh chụp màn hình của màu chủ đề mới trong chế độ tối',
               })}
             />
           </EuiFlexItem>
@@ -92,7 +91,7 @@ export const NewThemeModal: FC<Props> = ({ addBasePath, onClose }) => {
 
       <EuiModalFooter>
         <EuiButton onClick={onClose} fill>
-          <FormattedMessage id="home.newThemeModal.dismissButtonLabel" defaultMessage="Dismiss" />
+          <FormattedMessage id="home.newThemeModal.dismissButtonLabel" defaultMessage="Bỏ qua" />
         </EuiButton>
       </EuiModalFooter>
     </EuiModal>

@@ -81,7 +81,7 @@ export const StatusMessage: React.FC<StatusMessageProps> = ({
         <span>
           <FormattedMessage
             id="indexPatternManagement.createIndexPattern.step.status.noSystemIndicesWithPromptLabel"
-            defaultMessage="No OpenSearch indices match your pattern. To view the matching system indices, toggle the switch above."
+            defaultMessage="Không có chỉ mục OpenSearch nào khớp với mẫu của bạn. Để xem các chỉ số hệ thống phù hợp, hãy bật nút chuyển ở trên."
           />
         </span>
       );
@@ -90,7 +90,7 @@ export const StatusMessage: React.FC<StatusMessageProps> = ({
         <span>
           <FormattedMessage
             id="indexPatternManagement.createIndexPattern.step.status.noSystemIndicesLabel"
-            defaultMessage="No OpenSearch indices match your pattern."
+            defaultMessage="Không có chỉ mục OpenSearch nào khớp với mẫu của bạn."
           />
         </span>
       );
@@ -103,10 +103,7 @@ export const StatusMessage: React.FC<StatusMessageProps> = ({
         &nbsp;
         <FormattedMessage
           id="indexPatternManagement.createIndexPattern.step.status.successLabel.successDetail"
-          defaultMessage="Your index pattern matches {sourceCount} {sourceCount, plural,
-            one {source}
-            other {sources}
-          }."
+          defaultMessage="Mẫu chỉ mục của bạn khớp với {sourceCount} {sourceCount, số nhiều, một {source} other {sources} }."
           values={{
             sourceCount: exactMatchedIndices.length,
           }}
@@ -120,21 +117,14 @@ export const StatusMessage: React.FC<StatusMessageProps> = ({
       <span>
         <FormattedMessage
           id="indexPatternManagement.createIndexPattern.step.status.partialMatchLabel.partialMatchDetail"
-          defaultMessage="Your index pattern doesn't match any indices, but you have {strongIndices} which
-          {matchedIndicesLength, plural,
-            one {looks}
-            other {look}
-          } similar."
+          defaultMessage="Mẫu chỉ mục của bạn không khớp với bất kỳ chỉ mục nào, nhưng bạn có {strongIndices} mà {matchedIndicesLength, số nhiều, một {looks} other {look} } tương tự."
           values={{
             matchedIndicesLength: partialMatchedIndices.length,
             strongIndices: (
               <strong>
                 <FormattedMessage
                   id="indexPatternManagement.createIndexPattern.step.status.partialMatchLabel.strongIndicesLabel"
-                  defaultMessage="{matchedIndicesLength, plural,
-                    one {index}
-                    other {# indices}
-                  }"
+                  defaultMessage="{matchedIndicesLength, số nhiều, một {chỉ mục} khác {# chỉ số} }"
                   values={{ matchedIndicesLength: partialMatchedIndices.length }}
                 />
               </strong>

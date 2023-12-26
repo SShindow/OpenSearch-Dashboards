@@ -116,7 +116,7 @@ function FilterBarUI(props: Props) {
         +{' '}
         <FormattedMessage
           id="data.filter.filterBar.addFilterButtonLabel"
-          defaultMessage="Add filter"
+          defaultMessage="Thêm bộ lọc"
         />
       </EuiButtonEmpty>
     );

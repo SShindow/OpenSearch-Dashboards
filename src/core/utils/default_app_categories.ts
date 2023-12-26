@@ -68,7 +68,7 @@ export const DEFAULT_APP_CATEGORIES: Record<string, AppCategory> = Object.freeze
   management: {
     id: 'management',
     label: i18n.translate('core.ui.managementNavList.label', {
-      defaultMessage: 'Management',
+      defaultMessage: 'Quản lý',
     }),
     order: 5000,
     euiIconType: 'managementApp',

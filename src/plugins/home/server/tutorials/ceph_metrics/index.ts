@@ -61,7 +61,7 @@ export function cephMetricsSpecProvider(context: TutorialContext): TutorialSchem
     artifacts: {
       application: {
         label: i18n.translate('home.tutorials.cephMetrics.artifacts.application.label', {
-          defaultMessage: 'Discover',
+          defaultMessage: 'Khám phá',
         }),
         path: '/app/discover#/',
       },

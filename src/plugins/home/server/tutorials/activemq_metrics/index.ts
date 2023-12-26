@@ -61,7 +61,7 @@ export function activemqMetricsSpecProvider(context: TutorialContext): TutorialS
     artifacts: {
       application: {
         label: i18n.translate('home.tutorials.activemqMetrics.artifacts.application.label', {
-          defaultMessage: 'Discover',
+          defaultMessage: 'Khám phá',
         }),
         path: '/app/discover#/',
       },

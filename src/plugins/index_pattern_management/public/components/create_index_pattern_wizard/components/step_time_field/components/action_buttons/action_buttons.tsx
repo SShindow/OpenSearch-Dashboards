@@ -61,7 +61,7 @@ export const ActionButtons = ({
       >
         <FormattedMessage
           id="indexPatternManagement.createIndexPattern.stepTime.createPatternButton"
-          defaultMessage="Create index pattern"
+          defaultMessage="Tạo mẫu chỉ mục"
         />
       </EuiButton>
     </EuiFlexItem>

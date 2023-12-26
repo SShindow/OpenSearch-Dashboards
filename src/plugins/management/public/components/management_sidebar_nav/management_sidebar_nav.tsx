@@ -58,7 +58,7 @@ interface ManagementSidebarNavProps {
 }
 
 const headerLabel = i18n.translate('management.nav.label', {
-  defaultMessage: 'Management',
+  defaultMessage: 'Quản lý',
 });
 
 const navMenuLabel = i18n.translate('management.nav.menu', {

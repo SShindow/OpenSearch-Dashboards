@@ -37,14 +37,14 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
   return {
     'visualization:regionmap:showWarnings': {
       name: i18n.translate('regionMap.advancedSettings.visualization.showRegionMapWarningsTitle', {
-        defaultMessage: 'Show region map warning',
+        defaultMessage: 'Hiển thị cảnh báo bản đồ khu vực',
       }),
       value: true,
       description: i18n.translate(
         'regionMap.advancedSettings.visualization.showRegionMapWarningsText',
         {
           defaultMessage:
-            'Whether the region map shows a warning when terms cannot be joined to a shape on the map.',
+            'Bản đồ khu vực có hiển thị cảnh báo khi không thể nối các cụm từ với một hình trên bản đồ hay không.',
         }
       ),
       schema: schema.boolean(),
@@ -52,14 +52,14 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
     },
     [CUSTOM_VECTOR_MAP_MAX_SIZE_SETTING]: {
       name: i18n.translate('regionMap.advancedSettings.visualization.customVectorMapDefaultSize', {
-        defaultMessage: 'Custom vector map size',
+        defaultMessage: 'Kích thước bản đồ vector tùy chỉnh',
       }),
       value: 1000,
       description: i18n.translate(
         'regionMap.advancedSettings.visualization.customVectorMapDefaultSizeText',
         {
           defaultMessage:
-            'The maximum number of features to load from custom vector map. A higher number might have negative impact on browser rendering performance.',
+            'Số lượng đối tượng tối đa cần tải từ bản đồ vector tùy chỉnh. Con số cao hơn có thể có tác động tiêu cực đến hiệu suất hiển thị của trình duyệt.',
         }
       ),
       schema: schema.number(),

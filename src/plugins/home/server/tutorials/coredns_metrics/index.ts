@@ -60,7 +60,7 @@ export function corednsMetricsSpecProvider(context: TutorialContext): TutorialSc
     artifacts: {
       application: {
         label: i18n.translate('home.tutorials.corednsMetrics.artifacts.application.label', {
-          defaultMessage: 'Discover',
+          defaultMessage: 'Khám phá',
         }),
         path: '/app/discover#/',
       },

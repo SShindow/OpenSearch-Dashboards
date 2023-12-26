@@ -58,7 +58,7 @@ const INSTRUCTIONS_TYPE = {
 
 const homeTitle = i18n.translate('home.breadcrumbs.homeTitle', { defaultMessage: 'Home' });
 const addDataTitle = i18n.translate('home.breadcrumbs.addDataTitle', {
-  defaultMessage: 'Add data',
+  defaultMessage: 'Thêm dữ liệu',
 });
 
 class TutorialUi extends React.Component {

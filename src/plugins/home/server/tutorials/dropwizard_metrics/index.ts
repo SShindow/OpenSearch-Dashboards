@@ -61,7 +61,7 @@ export function dropwizardMetricsSpecProvider(context: TutorialContext): Tutoria
     artifacts: {
       application: {
         label: i18n.translate('home.tutorials.dropwizardMetrics.artifacts.application.label', {
-          defaultMessage: 'Discover',
+          defaultMessage: 'Khám phá',
         }),
         path: '/app/discover#/',
       },

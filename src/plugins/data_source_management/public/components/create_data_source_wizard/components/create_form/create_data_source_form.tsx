@@ -667,7 +667,7 @@ export class CreateDataSourceForm extends React.Component<
             >
               <FormattedMessage
                 id="dataSourcesManagement.createDataSource.cancelButtonLabel"
-                defaultMessage="Cancel"
+                defaultMessage="Hủy bỏ"
               />
             </EuiButtonEmpty>
           </EuiFlexItem>

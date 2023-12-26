@@ -36,12 +36,12 @@ export const getAccessibilitySettings = (): Record<string, UiSettingsParams> => 
   return {
     'accessibility:disableAnimations': {
       name: i18n.translate('core.ui_settings.params.disableAnimationsTitle', {
-        defaultMessage: 'Disable Animations',
+        defaultMessage: 'Tắt ảnh động',
       }),
       value: false,
       description: i18n.translate('core.ui_settings.params.disableAnimationsText', {
         defaultMessage:
-          'Turn off all unnecessary animations in the OpenSearch Dashboards UI. Refresh the page to apply the changes.',
+          'Tắt tất cả các hoạt ảnh không cần thiết trong giao diện người dùng Bảng điều khiển OpenSearch. Làm mới trang để áp dụng các thay đổi.',
       }),
       category: ['appearance'],
       requiresPageReload: true,

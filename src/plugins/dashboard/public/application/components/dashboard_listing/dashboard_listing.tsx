@@ -191,13 +191,13 @@ export const DashboardListing = () => {
     chrome.setBreadcrumbs([
       {
         text: i18n.translate('dashboard.dashboardBreadcrumbsTitle', {
-          defaultMessage: 'Dashboards',
+          defaultMessage: 'Trang tổng quan',
         }),
       },
     ]);
 
     chrome.docTitle.change(
-      i18n.translate('dashboard.dashboardPageTitle', { defaultMessage: 'Dashboards' })
+      i18n.translate('dashboard.dashboardPageTitle', { defaultMessage: 'Trang tổng quan' })
     );
   });
 
@@ -217,13 +217,13 @@ export const DashboardListing = () => {
       initialPageSize={initialPageSize}
       noItemsFragment={noItemsFragment}
       entityName={i18n.translate('dashboard.listing.table.entityName', {
-        defaultMessage: 'dashboard',
+        defaultMessage: 'trang tổng quan',
       })}
       entityNamePlural={i18n.translate('dashboard.listing.table.entityNamePlural', {
-        defaultMessage: 'dashboards',
+        defaultMessage: 'trang tổng quan',
       })}
       tableListTitle={i18n.translate('dashboard.listing.dashboardsTitle', {
-        defaultMessage: 'Dashboards',
+        defaultMessage: 'Trang tổng quan',
       })}
       toastNotifications={notifications.toasts}
     />

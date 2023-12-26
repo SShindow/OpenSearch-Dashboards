@@ -203,7 +203,7 @@ export class DashboardCloneModal extends React.Component<Props, State> {
           <EuiButtonEmpty data-test-subj="cloneCancelButton" onClick={this.props.onClose}>
             <FormattedMessage
               id="dashboard.topNav.cloneModal.cancelButtonLabel"
-              defaultMessage="Cancel"
+              defaultMessage="Hủy bỏ"
             />
           </EuiButtonEmpty>
 

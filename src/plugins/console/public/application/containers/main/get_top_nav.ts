@@ -101,10 +101,10 @@ export function getTopNavConfig({
     {
       id: 'import',
       label: i18n.translate('console.topNav.importTabLabel', {
-        defaultMessage: 'Import',
+        defaultMessage: 'Nhập',
       }),
       description: i18n.translate('console.topNav.importTabDescription', {
-        defaultMessage: 'Import',
+        defaultMessage: 'Nhập',
       }),
       onClick: () => {
         onClickImport();

@@ -75,19 +75,19 @@ const confirmMessage = i18n.translate('indexPatternManagement.editIndexPattern.r
 
 const confirmModalOptionsRefresh = {
   confirmButtonText: i18n.translate('indexPatternManagement.editIndexPattern.refreshButton', {
-    defaultMessage: 'Refresh',
+    defaultMessage: 'Làm mới',
   }),
   title: i18n.translate('indexPatternManagement.editIndexPattern.refreshHeader', {
-    defaultMessage: 'Refresh field list?',
+    defaultMessage: 'Làm mới danh sách?',
   }),
 };
 
 const confirmModalOptionsDelete = {
   confirmButtonText: i18n.translate('indexPatternManagement.editIndexPattern.deleteButton', {
-    defaultMessage: 'Delete',
+    defaultMessage: 'Xóa',
   }),
   title: i18n.translate('indexPatternManagement.editIndexPattern.deleteHeader', {
-    defaultMessage: 'Delete index pattern?',
+    defaultMessage: 'Xóa mẫu chỉ mục?',
   }),
 };
 

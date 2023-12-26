@@ -80,7 +80,7 @@ export class AddPanelFlyout extends React.Component<Props, State> {
       title: i18n.translate(
         'embeddableApi.addPanel.savedObjectAddedToContainerSuccessMessageTitle',
         {
-          defaultMessage: '{savedObjectName} was added',
+          defaultMessage: '{savedObjectName} đã được thêm vào',
           values: {
             savedObjectName: name,
           },
@@ -153,7 +153,7 @@ export class AddPanelFlyout extends React.Component<Props, State> {
         savedObjectMetaData={metaData}
         showFilter={true}
         noItemsMessage={i18n.translate('embeddableApi.addPanel.noMatchingObjectsMessage', {
-          defaultMessage: 'No matching objects found.',
+          defaultMessage: 'Không tìm thấy đối tượng phù hợp.',
         })}
       >
         <SavedObjectFinderCreateNew menuItems={this.getCreateMenuItems()} />
@@ -165,7 +165,7 @@ export class AddPanelFlyout extends React.Component<Props, State> {
         <EuiFlyoutHeader hasBorder>
           <EuiTitle size="m">
             <h2>
-              <FormattedMessage id="embeddableApi.addPanel.Title" defaultMessage="Add panels" />
+              <FormattedMessage id="embeddableApi.addPanel.Title" defaultMessage="Thêm bảng" />
             </h2>
           </EuiTitle>
         </EuiFlyoutHeader>

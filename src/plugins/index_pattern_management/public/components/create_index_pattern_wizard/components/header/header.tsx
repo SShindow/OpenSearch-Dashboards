@@ -54,7 +54,7 @@ export const Header = ({
   const createIndexPatternHeader = i18n.translate(
     'indexPatternManagement.createIndexPatternHeader',
     {
-      defaultMessage: 'Create {indexPatternName}',
+      defaultMessage: 'Tạo {indexPatternName}',
       values: { indexPatternName },
     }
   );
@@ -83,7 +83,7 @@ export const Header = ({
         <p>
           <FormattedMessage
             id="indexPatternManagement.createIndexPattern.description"
-            defaultMessage="An index pattern can match a single source, for example, {single}, or {multiple} data sources, {star}."
+            defaultMessage="Mẫu chỉ mục có thể khớp với một nguồn duy nhất, ví dụ: nguồn dữ liệu {single} hoặc {multiple}, {star}."
             values={{
               multiple: <strong>multiple</strong>,
               single: <EuiCode>filebeat-4-3-22</EuiCode>,
@@ -98,7 +98,7 @@ export const Header = ({
           >
             <FormattedMessage
               id="indexPatternManagement.createIndexPattern.documentation"
-              defaultMessage="Read documentation"
+              defaultMessage="Đọc tài liệu"
             />
           </EuiLink>
         </p>

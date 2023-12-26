@@ -136,7 +136,7 @@ export const ImportFlyout = ({ close, refresh }: ImportFlyoutProps) => {
           label={
             <FormattedMessage
               id="console.ImportFlyout.selectFileToImportFormRowLabel"
-              defaultMessage="Select a file to import"
+              defaultMessage="Chọn một tập tin để thêm"
             />
           }
         >
@@ -147,7 +147,7 @@ export const ImportFlyout = ({ close, refresh }: ImportFlyoutProps) => {
             initialPromptText={
               <FormattedMessage
                 id="console.ImportFlyout.importPromptText"
-                defaultMessage="Import"
+                defaultMessage="Thêm"
               />
             }
             onChange={setImportFile}
@@ -217,7 +217,7 @@ export const ImportFlyout = ({ close, refresh }: ImportFlyoutProps) => {
         setStatus('error');
         setError(
           i18n.translate('console.ImportFlyout.importFileErrorMessage', {
-            defaultMessage: 'The selected file is not valid. Please select a valid JSON file.',
+            defaultMessage: 'Tệp đã chọn không hợp lệ. Vui lòng chọn tệp JSON hợp lệ.',
           })
         );
         return;
@@ -250,7 +250,7 @@ export const ImportFlyout = ({ close, refresh }: ImportFlyoutProps) => {
           >
             <FormattedMessage
               id="console.importFlyout.import.cancelButtonLabel"
-              defaultMessage="Cancel"
+              defaultMessage="Hủy bỏ"
             />
           </EuiButtonEmpty>
         </EuiFlexItem>
@@ -265,7 +265,7 @@ export const ImportFlyout = ({ close, refresh }: ImportFlyoutProps) => {
           >
             <FormattedMessage
               id="console.importFlyout.import.confirmButtonLabel"
-              defaultMessage="Import"
+              defaultMessage="Thêm"
             />
           </EuiButton>
         </EuiFlexItem>
@@ -280,7 +280,7 @@ export const ImportFlyout = ({ close, refresh }: ImportFlyoutProps) => {
           <h2>
             <FormattedMessage
               id="console.ImportFlyout.importQueriesTitle"
-              defaultMessage="Import queries"
+              defaultMessage="Nhập truy vấn"
             />
           </h2>
         </EuiTitle>

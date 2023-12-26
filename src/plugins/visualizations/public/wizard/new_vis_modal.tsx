@@ -100,7 +100,7 @@ class NewVisModal extends React.Component<TypeSelectionProps, TypeSelectionState
       'visualizations.newVisWizard.helpTextAriaLabel',
       {
         defaultMessage:
-          'Start creating your visualization by selecting a type for that visualization. Hit escape to close this modal. Hit Tab key to go further.',
+          'Bắt đầu tạo hình ảnh trực quan của bạn bằng cách chọn loại cho hình ảnh trực quan đó. Nhấn phím thoát để đóng phương thức này. Nhấn phím Tab để đi xa hơn.',
       }
     );
 

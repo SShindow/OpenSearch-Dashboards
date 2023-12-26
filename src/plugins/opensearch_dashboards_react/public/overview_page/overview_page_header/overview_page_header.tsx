@@ -122,7 +122,7 @@ export const OverviewPageHeader: FC<Props> = ({
                       {i18n.translate(
                         'opensearch-dashboards-react.osdOverviewPageHeader.addDataButtonLabel',
                         {
-                          defaultMessage: 'Add data',
+                          defaultMessage: 'Thêm dữ liệu',
                         }
                       )}
                     </EuiButtonEmpty>
@@ -141,7 +141,7 @@ export const OverviewPageHeader: FC<Props> = ({
                         {i18n.translate(
                           'opensearch-dashboards-react.osdOverviewPageHeader.stackManagementButtonLabel',
                           {
-                            defaultMessage: 'Manage',
+                            defaultMessage: 'Quản lý',
                           }
                         )}
                       </EuiButtonEmpty>
@@ -161,7 +161,7 @@ export const OverviewPageHeader: FC<Props> = ({
                         {i18n.translate(
                           'opensearch-dashboards-react.osdOverviewPageHeader.devToolsButtonLabel',
                           {
-                            defaultMessage: 'Dev tools',
+                            defaultMessage: 'Công cụ nhà phát triển',
                           }
                         )}
                       </EuiButtonEmpty>

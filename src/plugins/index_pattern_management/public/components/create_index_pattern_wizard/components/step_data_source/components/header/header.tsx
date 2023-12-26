@@ -149,7 +149,7 @@ export const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
               aria-label={i18n.translate(
                 'indexPatternManagement.createIndexPattern.stepDataSource.searchlabel',
                 {
-                  defaultMessage: 'Search data sources',
+                  defaultMessage: 'Tìm dữ liệu nguồn',
                 }
               )}
               searchable
@@ -158,7 +158,7 @@ export const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
                 placeholder: i18n.translate(
                   'indexPatternManagement.createIndexPattern.stepDataSource.searchPlaceHolder',
                   {
-                    defaultMessage: 'Search data sources',
+                    defaultMessage: 'Tìm dữ liệu nguồn',
                   }
                 ),
               }}

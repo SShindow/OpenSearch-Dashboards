@@ -731,7 +731,7 @@ export class FieldEditor extends PureComponent<FieldEdiorProps, FieldEditorState
                   <EuiButtonEmpty color="danger" onClick={this.showDeleteModal}>
                     <FormattedMessage
                       id="indexPatternManagement.actions.deleteButton"
-                      defaultMessage="Delete"
+                      defaultMessage="Xóa"
                     />
                   </EuiButtonEmpty>
                 </EuiFlexItem>

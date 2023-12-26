@@ -69,5 +69,5 @@ KuiToolBarSearchBox.propTypes = {
 };
 
 KuiToolBarSearchBox.defaultProps = {
-  placeholder: 'Search...',
+  placeholder: 'Tìm kiếm...',
 };

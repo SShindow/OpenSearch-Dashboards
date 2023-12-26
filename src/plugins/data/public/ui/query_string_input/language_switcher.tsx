@@ -63,7 +63,7 @@ export function QueryLanguageSwitcher(props: Props) {
   const dqlFullName = (
     <FormattedMessage
       id="data.query.queryBar.dqlFullLanguageName"
-      defaultMessage="OpenSearch Dashboards Query Language"
+      defaultMessage="Ngôn ngữ truy vấn của bảng điều khiển OpenSearch"
     />
   );
 
@@ -92,7 +92,7 @@ export function QueryLanguageSwitcher(props: Props) {
       <EuiPopoverTitle>
         <FormattedMessage
           id="data.query.queryBar.syntaxOptionsTitle"
-          defaultMessage="Syntax options"
+          defaultMessage="Tùy chọn cú pháp"
         />
       </EuiPopoverTitle>
       <div style={{ width: '350px' }}>
@@ -100,9 +100,7 @@ export function QueryLanguageSwitcher(props: Props) {
           <p>
             <FormattedMessage
               id="data.query.queryBar.syntaxOptionsDescription"
-              defaultMessage="The {docsLink} (DQL) offers a simplified query
-              syntax and support for scripted fields. If you turn off DQL,
-              OpenSearch Dashboards uses Lucene."
+              defaultMessage="{docsLink} (DQL) cung cấp cú pháp truy vấn đơn giản hóa và hỗ trợ cho các trường theo tập lệnh. Nếu bạn tắt DQL thì Bảng thông tin OpenSearch sẽ sử dụng Lucene."
               values={{
                 docsLink: (
                   <EuiLink href={osdDQLDocs} target="_blank">
@@ -123,9 +121,9 @@ export function QueryLanguageSwitcher(props: Props) {
               name="popswitch"
               label={
                 props.language === 'kuery' ? (
-                  <FormattedMessage id="data.query.queryBar.dqlOnLabel" defaultMessage="On" />
+                  <FormattedMessage id="data.query.queryBar.dqlOnLabel" defaultMessage="Bật" />
                 ) : (
-                  <FormattedMessage id="data.query.queryBar.dqlOffLabel" defaultMessage="Off" />
+                  <FormattedMessage id="data.query.queryBar.dqlOffLabel" defaultMessage="Tắt" />
                 )
               }
               checked={props.language === 'kuery'}

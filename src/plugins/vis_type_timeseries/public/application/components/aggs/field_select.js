@@ -106,7 +106,7 @@ FieldSelectUi.defaultProps = {
   disabled: false,
   restrict: [],
   placeholder: i18n.translate('visTypeTimeseries.fieldSelect.selectFieldPlaceholder', {
-    defaultMessage: 'Select field...',
+    defaultMessage: 'Chọn mục...',
   }),
 };
 

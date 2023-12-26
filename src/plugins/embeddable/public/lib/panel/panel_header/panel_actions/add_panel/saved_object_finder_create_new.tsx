@@ -59,7 +59,7 @@ export function SavedObjectFinderCreateNew({ menuItems }: Props) {
         >
           <FormattedMessage
             id="embeddableApi.addPanel.createNewDefaultOption"
-            defaultMessage="Create new"
+            defaultMessage="Tạo mới"
           />
         </EuiButton>
       }

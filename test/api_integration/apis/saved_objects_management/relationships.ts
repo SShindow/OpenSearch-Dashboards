@@ -198,7 +198,7 @@ export default function ({ getService }: FtrProviderContext) {
             relationship: 'child',
             meta: {
               icon: 'visualizeApp',
-              title: 'Visualization',
+              title: 'Trực quan',
               editUrl:
                 '/management/opensearch-dashboards/objects/savedVisualizations/add810b0-3224-11e8-a572-ffca06da1357',
               inAppUrl: {
@@ -238,7 +238,7 @@ export default function ({ getService }: FtrProviderContext) {
             type: 'visualization',
             meta: {
               icon: 'visualizeApp',
-              title: 'Visualization',
+              title: 'Trực quan',
               editUrl:
                 '/management/opensearch-dashboards/objects/savedVisualizations/add810b0-3224-11e8-a572-ffca06da1357',
               inAppUrl: {
@@ -401,7 +401,7 @@ export default function ({ getService }: FtrProviderContext) {
             relationship: 'parent',
             meta: {
               icon: 'visualizeApp',
-              title: 'Visualization',
+              title: 'Trực quan',
               editUrl:
                 '/management/opensearch-dashboards/objects/savedVisualizations/add810b0-3224-11e8-a572-ffca06da1357',
               inAppUrl: {

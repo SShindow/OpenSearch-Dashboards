@@ -97,7 +97,7 @@ export const EmptyIndexPatternPrompt = ({
               <CreateButton options={creationOptions}>
                 <FormattedMessage
                   id="indexPatternManagement.indexPatternTable.createBtn"
-                  defaultMessage="Create index pattern"
+                  defaultMessage="Tạo mẫu chỉ mục"
                 />
               </CreateButton>
             )}

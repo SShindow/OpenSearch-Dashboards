@@ -19,17 +19,17 @@ export interface ImportMode {
 const overwriteEnabled = {
   id: 'overwriteEnabled',
   label: i18n.translate('console.importModeControl.overwrite.enabledLabel', {
-    defaultMessage: 'Overwrite existing queries',
+    defaultMessage: 'Ghi đè các truy vấn hiện có',
   }),
 };
 const overwriteDisabled = {
   id: 'overwriteDisabled',
   label: i18n.translate('console.importModeControl.overwrite.disabledLabel', {
-    defaultMessage: 'Merge with existing queries',
+    defaultMessage: 'Hợp nhất với các truy vấn hiện có',
   }),
 };
 const importOptionsTitle = i18n.translate('console.importModeControl.importOptionsTitle', {
-  defaultMessage: 'Import options',
+  defaultMessage: 'Tùy chọn thêm',
 });
 
 export const ImportModeControl = ({ initialValues, updateSelection }: ImportModeControlProps) => {

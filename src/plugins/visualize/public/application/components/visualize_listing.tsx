@@ -83,12 +83,12 @@ export const VisualizeListing = () => {
     chrome.setBreadcrumbs([
       {
         text: i18n.translate('visualize.visualizeListingBreadcrumbsTitle', {
-          defaultMessage: 'Visualize',
+          defaultMessage: 'Trực quan',
         }),
       },
     ]);
     chrome.docTitle.change(
-      i18n.translate('visualize.listingPageTitle', { defaultMessage: 'Visualize' })
+      i18n.translate('visualize.listingPageTitle', { defaultMessage: 'Trực quan' })
     );
   });
   useUnmount(() => closeNewVisModal.current());
@@ -177,13 +177,13 @@ export const VisualizeListing = () => {
       initialFilter={''}
       noItemsFragment={noItemsFragment}
       entityName={i18n.translate('visualize.listing.table.entityName', {
-        defaultMessage: 'visualization',
+        defaultMessage: 'trực quan',
       })}
       entityNamePlural={i18n.translate('visualize.listing.table.entityNamePlural', {
-        defaultMessage: 'visualizations',
+        defaultMessage: 'trực quan',
       })}
       tableListTitle={i18n.translate('visualize.listing.table.listTitle', {
-        defaultMessage: 'Visualizations',
+        defaultMessage: 'Trực quan',
       })}
       toastNotifications={toastNotifications}
     />

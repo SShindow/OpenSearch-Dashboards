@@ -59,7 +59,7 @@ export const AddData: FC<Props> = ({ addBasePath, features }) => {
             <h2 id="osdOverviewDataAdd__title">
               <FormattedMessage
                 id="opensearchDashboardsOverview.addData.sectionTitle"
-                defaultMessage="Ingest your data"
+                defaultMessage="Nhập dữ liệu của bạn"
               />
             </h2>
           </EuiTitle>

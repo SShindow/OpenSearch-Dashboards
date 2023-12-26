@@ -63,7 +63,7 @@ export class DateNanosFormatEditor extends DefaultFormatEditor<DateNanosFormatEd
           label={
             <FormattedMessage
               id="indexPatternManagement.date.momentLabel"
-              defaultMessage="Moment.js format pattern (Default: {defaultPattern})"
+              defaultMessage="Mẫu định dạng Moment.js (Mặc định: {defaultPattern})"
               values={{
                 defaultPattern: <EuiCode>{defaultPattern}</EuiCode>,
               }}
@@ -76,7 +76,7 @@ export class DateNanosFormatEditor extends DefaultFormatEditor<DateNanosFormatEd
               <EuiLink target="_blank" href="https://momentjs.com/">
                 <FormattedMessage
                   id="indexPatternManagement.date.documentationLabel"
-                  defaultMessage="Documentation"
+                  defaultMessage="Tài liệu"
                 />
                 &nbsp;
                 <EuiIcon type="link" />

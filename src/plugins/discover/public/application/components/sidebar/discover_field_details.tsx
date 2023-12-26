@@ -116,7 +116,7 @@ export function DiscoverFieldDetails({
             >
               <FormattedMessage
                 id="discover.fieldChooser.detailViews.visualizeLinkText"
-                defaultMessage="Visualize"
+                defaultMessage="Trực quan"
               />
             </EuiButton>
             {warnings.length > 0 && (

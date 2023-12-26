@@ -50,7 +50,7 @@ export function HelpPanel(props: Props) {
       <EuiFlyoutHeader hasBorder>
         <EuiTitle size="m">
           <h2>
-            <FormattedMessage id="console.helpPage.pageTitle" defaultMessage="Help" />
+            <FormattedMessage id="console.helpPage.pageTitle" defaultMessage="Trợ giúp" />
           </h2>
         </EuiTitle>
       </EuiFlyoutHeader>
@@ -58,21 +58,21 @@ export function HelpPanel(props: Props) {
         <EuiText>
           <h3>
             <FormattedMessage
-              defaultMessage="Request format"
+              defaultMessage="Định dạng yêu cầu"
               id="console.helpPage.requestFormatTitle"
             />
           </h3>
           <p>
             <FormattedMessage
               id="console.helpPage.requestFormatDescription"
-              defaultMessage="You can type one or more requests in the white editor. Console understands requests in a compact format:"
+              defaultMessage="Bạn có thể nhập một hoặc nhiều yêu cầu vào trình soạn thảo màu trắng. Bảng điều khiển hiểu các yêu cầu ở định dạng nhỏ gọn:"
             />
           </p>
           <EditorExample panel="help" />
           <h3>
             <FormattedMessage
               id="console.helpPage.keyboardCommandsTitle"
-              defaultMessage="Keyboard commands"
+              defaultMessage="Lệnh bàn phím"
             />
           </h3>
           <EuiSpacer />
@@ -81,70 +81,70 @@ export function HelpPanel(props: Props) {
             <dd>
               <FormattedMessage
                 id="console.helpPage.keyboardCommands.autoIndentDescription"
-                defaultMessage="Auto indent current request"
+                defaultMessage="Tự động thụt lề yêu cầu hiện tại"
               />
             </dd>
             <dt>Ctrl/Cmd + /</dt>
             <dd>
               <FormattedMessage
                 id="console.helpPage.keyboardCommands.openDocumentationDescription"
-                defaultMessage="Open documentation for current request"
+                defaultMessage="Mở tài liệu cho yêu cầu hiện tại"
               />
             </dd>
             <dt>Ctrl + Space</dt>
             <dd>
               <FormattedMessage
                 id="console.helpPage.keyboardCommands.openAutoCompleteDescription"
-                defaultMessage="Open Auto complete (even if not typing)"
+                defaultMessage="Mở Tự động hoàn thành (ngay cả khi không gõ)"
               />
             </dd>
             <dt>Ctrl/Cmd + Enter</dt>
             <dd>
               <FormattedMessage
                 id="console.helpPage.keyboardCommands.submitRequestDescription"
-                defaultMessage="Submit request"
+                defaultMessage="Gửi yêu cầu"
               />
             </dd>
             <dt>Ctrl/Cmd + Up/Down</dt>
             <dd>
               <FormattedMessage
                 id="console.helpPage.keyboardCommands.jumpToPreviousNextRequestDescription"
-                defaultMessage="Jump to the previous/next request start or end."
+                defaultMessage="Chuyển đến phần bắt đầu hoặc kết thúc yêu cầu trước/tiếp theo."
               />
             </dd>
             <dt>Ctrl/Cmd + Alt + L</dt>
             <dd>
               <FormattedMessage
                 id="console.helpPage.keyboardCommands.collapseExpandCurrentScopeDescription"
-                defaultMessage="Collapse/expand current scope."
+                defaultMessage="Thu gọn/mở rộng phạm vi hiện tại."
               />
             </dd>
             <dt>Ctrl/Cmd + Option + 0</dt>
             <dd>
               <FormattedMessage
                 id="console.helpPage.keyboardCommands.collapseAllScopesDescription"
-                defaultMessage="Collapse all scopes but the current one. Expand by adding a shift."
+                defaultMessage="Thu gọn tất cả phạm vi trừ phạm vi hiện tại. Mở rộng bằng cách thêm ca."
               />
             </dd>
             <dt>Down arrow</dt>
             <dd>
               <FormattedMessage
                 id="console.helpPage.keyboardCommands.switchFocusToAutoCompleteMenuDescription"
-                defaultMessage="Switch focus to auto-complete menu. Use arrows to further select a term"
+                defaultMessage="Chuyển tập trung sang menu tự động hoàn thành. Sử dụng mũi tên để chọn thêm một thuật ngữ"
               />
             </dd>
             <dt>Enter/Tab</dt>
             <dd>
               <FormattedMessage
                 id="console.helpPage.keyboardCommands.selectCurrentlySelectedInAutoCompleteMenuDescription"
-                defaultMessage="Select the currently selected or the top most term in auto-complete menu"
+                defaultMessage="Chọn thuật ngữ hiện được chọn hoặc thuật ngữ hàng đầu trong menu tự động hoàn thành"
               />
             </dd>
             <dt>Esc</dt>
             <dd>
               <FormattedMessage
                 id="console.helpPage.keyboardCommands.closeAutoCompleteMenuDescription"
-                defaultMessage="Close auto-complete menu"
+                defaultMessage="Đóng menu tự động hoàn thành"
               />
             </dd>
           </dl>

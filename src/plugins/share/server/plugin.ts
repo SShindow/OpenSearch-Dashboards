@@ -44,21 +44,21 @@ export class SharePlugin implements Plugin {
     core.uiSettings.register({
       [CSV_SEPARATOR_SETTING]: {
         name: i18n.translate('share.advancedSettings.csv.separatorTitle', {
-          defaultMessage: 'CSV separator',
+          defaultMessage: 'Dấu phân cách CSV',
         }),
         value: ',',
         description: i18n.translate('share.advancedSettings.csv.separatorText', {
-          defaultMessage: 'Separate exported values with this string',
+          defaultMessage: 'Tách các giá trị được xuất bằng chuỗi này',
         }),
         schema: schema.string(),
       },
       [CSV_QUOTE_VALUES_SETTING]: {
         name: i18n.translate('share.advancedSettings.csv.quoteValuesTitle', {
-          defaultMessage: 'Quote CSV values',
+          defaultMessage: 'Trích dẫn giá trị CSV',
         }),
         value: true,
         description: i18n.translate('share.advancedSettings.csv.quoteValuesText', {
-          defaultMessage: 'Should values be quoted in csv exports?',
+          defaultMessage: 'Giá trị CSV có nên được trích dẫn không?',
         }),
         schema: schema.boolean(),
       },

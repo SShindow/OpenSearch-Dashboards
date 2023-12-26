@@ -49,7 +49,7 @@ export const AddData: FC<Props> = ({ addBasePath, features }) => (
       <EuiFlexItem grow={1}>
         <EuiTitle size="s">
           <h2 id="homDataAdd__title">
-            <FormattedMessage id="home.addData.sectionTitle" defaultMessage="Ingest your data" />
+            <FormattedMessage id="home.addData.sectionTitle" defaultMessage="Nhập dữ liệu của bạn" />
           </h2>
         </EuiTitle>
       </EuiFlexItem>

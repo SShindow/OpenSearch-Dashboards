@@ -44,7 +44,7 @@ import { runRoute } from './routes/run';
 import { ConfigManager } from './lib/config_manager';
 
 const experimentalLabel = i18n.translate('timeline.uiSettings.experimentalLabel', {
-  defaultMessage: 'experimental',
+  defaultMessage: 'thử nghiệm',
 });
 
 export interface TimelinePluginStartDeps {
@@ -74,7 +74,7 @@ export class Plugin {
 
       throw new Error(
         i18n.translate('timeline.noFunctionErrorMessage', {
-          defaultMessage: 'No such function: {name}',
+          defaultMessage: 'Không có chức năng như vậy: {name}',
           values: { name },
         })
       );
@@ -99,11 +99,11 @@ export class Plugin {
     core.uiSettings.register({
       'timeline:es.timefield': {
         name: i18n.translate('timeline.uiSettings.timeFieldLabel', {
-          defaultMessage: 'Time field',
+          defaultMessage: 'Vùng thời gian',
         }),
         value: '@timestamp',
         description: i18n.translate('timeline.uiSettings.timeFieldDescription', {
-          defaultMessage: 'Default field containing a timestamp when using {opensearchParam}',
+          defaultMessage: 'Vùng mặc định chứa dấu thời gian khi sử dụng {opensearchParam}',
           values: { opensearchParam: '.opensearch()' },
         }),
         category: ['timeline'],
@@ -111,11 +111,11 @@ export class Plugin {
       },
       'timeline:es.default_index': {
         name: i18n.translate('timeline.uiSettings.defaultIndexLabel', {
-          defaultMessage: 'Default index',
+          defaultMessage: 'Chỉ mục mặc định',
         }),
         value: '_all',
         description: i18n.translate('timeline.uiSettings.defaultIndexDescription', {
-          defaultMessage: 'Default opensearch index to search with {opensearchParam}',
+          defaultMessage: 'Chỉ mục opensearch mặc định để tìm kiếm bằng {opensearchParam}',
           values: { opensearchParam: '.opensearch()' },
         }),
         category: ['timeline'],
@@ -123,33 +123,33 @@ export class Plugin {
       },
       'timeline:target_buckets': {
         name: i18n.translate('timeline.uiSettings.targetBucketsLabel', {
-          defaultMessage: 'Target buckets',
+          defaultMessage: 'Nhóm mục tiêu',
         }),
         value: 200,
         description: i18n.translate('timeline.uiSettings.targetBucketsDescription', {
-          defaultMessage: 'The number of buckets to shoot for when using auto intervals',
+          defaultMessage: 'Số lượng nhóm cần sử dụng khi sử dụng khoảng thời gian tự động',
         }),
         category: ['timeline'],
         schema: schema.number(),
       },
       'timeline:max_buckets': {
         name: i18n.translate('timeline.uiSettings.maximumBucketsLabel', {
-          defaultMessage: 'Maximum buckets',
+          defaultMessage: 'Nhóm tối đa',
         }),
         value: 2000,
         description: i18n.translate('timeline.uiSettings.maximumBucketsDescription', {
-          defaultMessage: 'The maximum number of buckets a single datasource can return',
+          defaultMessage: 'Số lượng nhóm tối đa mà một nguồn dữ liệu có thể trả về',
         }),
         category: ['timeline'],
         schema: schema.number(),
       },
       'timeline:min_interval': {
         name: i18n.translate('timeline.uiSettings.minimumIntervalLabel', {
-          defaultMessage: 'Minimum interval',
+          defaultMessage: 'Khoảng thời gian tối thiểu',
         }),
         value: '1ms',
         description: i18n.translate('timeline.uiSettings.minimumIntervalDescription', {
-          defaultMessage: 'The smallest interval that will be calculated when using "auto"',
+          defaultMessage: 'Khoảng thời gian nhỏ nhất sẽ được tính khi sử dụng "tự động"',
           description:
             '"auto" is a technical value in that context, that should not be translated.',
         }),
@@ -167,7 +167,7 @@ export class Plugin {
             ? config.graphiteAllowedUrls[0]
             : null,
         description: i18n.translate('timeline.uiSettings.graphiteURLDescription', {
-          defaultMessage: '{experimentalLabel} The URL of your graphite host',
+          defaultMessage: '{experimentalLabel} URL của máy chủ graphite của bạn',
           values: { experimentalLabel: `<em>[${experimentalLabel}]</em>` },
         }),
         category: ['timeline'],
@@ -175,11 +175,11 @@ export class Plugin {
       },
       'timeline:quandl.key': {
         name: i18n.translate('timeline.uiSettings.quandlKeyLabel', {
-          defaultMessage: 'Quandl key',
+          defaultMessage: 'Chìa khóa Quandl',
         }),
         value: 'someKeyHere',
         description: i18n.translate('timeline.uiSettings.quandlKeyDescription', {
-          defaultMessage: '{experimentalLabel} Your API key from www.quandl.com',
+          defaultMessage: '{experimentalLabel} Khóa API của bạn từ www.quandl.com',
           values: { experimentalLabel: `<em>[${experimentalLabel}]</em>` },
         }),
         category: ['timeline'],

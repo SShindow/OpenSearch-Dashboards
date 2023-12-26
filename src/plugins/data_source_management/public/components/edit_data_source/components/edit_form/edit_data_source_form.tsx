@@ -1021,7 +1021,7 @@ export class EditDataSourceForm extends React.Component<EditDataSourceProps, Edi
             >
               <FormattedMessage
                 id="dataSourcesManagement.editDataSource.cancelButtonLabel"
-                defaultMessage="Cancel changes"
+                defaultMessage="Hủy thay đổi"
               />
             </EuiButtonEmpty>
           </EuiFlexItem>

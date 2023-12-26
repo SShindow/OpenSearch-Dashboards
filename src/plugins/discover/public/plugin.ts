@@ -245,7 +245,7 @@ export class DiscoverPlugin
 
     core.application.register({
       id: PLUGIN_ID,
-      title: 'Discover',
+      title: 'Khám phá',
       updater$: this.appStateUpdater.asObservable(),
       order: 1000,
       euiIconType: 'inputOutput',

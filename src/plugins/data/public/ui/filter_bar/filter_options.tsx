@@ -70,7 +70,7 @@ class FilterOptionsUI extends Component<Props, State> {
         {
           name: this.props.intl.formatMessage({
             id: 'data.filter.options.enableAllFiltersButtonLabel',
-            defaultMessage: 'Enable all',
+            defaultMessage: 'Cho phép tất cả',
           }),
           icon: 'eye',
           onClick: () => {
@@ -82,7 +82,7 @@ class FilterOptionsUI extends Component<Props, State> {
         {
           name: this.props.intl.formatMessage({
             id: 'data.filter.options.disableAllFiltersButtonLabel',
-            defaultMessage: 'Disable all',
+            defaultMessage: 'Vô hiệu hóa tất cả',
           }),
           icon: 'eyeClosed',
           onClick: () => {
@@ -94,7 +94,7 @@ class FilterOptionsUI extends Component<Props, State> {
         {
           name: this.props.intl.formatMessage({
             id: 'data.filter.options.pinAllFiltersButtonLabel',
-            defaultMessage: 'Pin all',
+            defaultMessage: 'Ghim tất cả',
           }),
           icon: 'pin',
           onClick: () => {
@@ -106,7 +106,7 @@ class FilterOptionsUI extends Component<Props, State> {
         {
           name: this.props.intl.formatMessage({
             id: 'data.filter.options.unpinAllFiltersButtonLabel',
-            defaultMessage: 'Unpin all',
+            defaultMessage: 'Bỏ ghim tất cả',
           }),
           icon: 'pin',
           onClick: () => {
@@ -118,7 +118,7 @@ class FilterOptionsUI extends Component<Props, State> {
         {
           name: this.props.intl.formatMessage({
             id: 'data.filter.options.invertNegatedFiltersButtonLabel',
-            defaultMessage: 'Invert inclusion',
+            defaultMessage: 'Đảo ngược sự bao gồm',
           }),
           icon: 'invert',
           onClick: () => {
@@ -130,7 +130,7 @@ class FilterOptionsUI extends Component<Props, State> {
         {
           name: this.props.intl.formatMessage({
             id: 'data.filter.options.invertDisabledFiltersButtonLabel',
-            defaultMessage: 'Invert enabled/disabled',
+            defaultMessage: 'Đảo ngược bật/tắt',
           }),
           icon: 'eye',
           onClick: () => {
@@ -142,7 +142,7 @@ class FilterOptionsUI extends Component<Props, State> {
         {
           name: this.props.intl.formatMessage({
             id: 'data.filter.options.deleteAllFiltersButtonLabel',
-            defaultMessage: 'Remove all',
+            defaultMessage: 'Bỏ hết',
           }),
           icon: 'trash',
           onClick: () => {
@@ -166,11 +166,11 @@ class FilterOptionsUI extends Component<Props, State> {
             iconType="filter"
             aria-label={this.props.intl.formatMessage({
               id: 'data.filter.options.changeAllFiltersButtonLabel',
-              defaultMessage: 'Change all filters',
+              defaultMessage: 'Đổi tất cả bộ lọc',
             })}
             title={this.props.intl.formatMessage({
               id: 'data.filter.options.changeAllFiltersButtonLabel',
-              defaultMessage: 'Change all filters',
+              defaultMessage: 'Đổi tất cả bộ lọc',
             })}
             data-test-subj="showFilterActions"
           />
@@ -182,7 +182,7 @@ class FilterOptionsUI extends Component<Props, State> {
         <EuiPopoverTitle>
           <FormattedMessage
             id="data.filter.searchBar.changeAllFiltersTitle"
-            defaultMessage="Change all filters"
+            defaultMessage="Đổi tất cả bộ lọc"
           />
         </EuiPopoverTitle>
         <EuiContextMenu initialPanelId={0} panels={[panelTree]} />

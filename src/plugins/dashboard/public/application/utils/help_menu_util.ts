@@ -37,7 +37,7 @@ export function addHelpMenuToAppChrome(
 ) {
   chrome.setHelpExtension({
     appName: i18n.translate('dashboard.helpMenu.appName', {
-      defaultMessage: 'Dashboards',
+      defaultMessage: 'Trang tổng quan',
     }),
     links: [
       {

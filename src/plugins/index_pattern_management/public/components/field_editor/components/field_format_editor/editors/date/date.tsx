@@ -77,7 +77,7 @@ export class DateFormatEditor extends DefaultFormatEditor<DateFormatEditorFormat
               <EuiLink target="_blank" href="https://momentjs.com/">
                 <FormattedMessage
                   id="indexPatternManagement.date.documentationLabel"
-                  defaultMessage="Documentation"
+                  defaultMessage="Tài liệu"
                 />
                 &nbsp;
                 <EuiIcon type="link" />

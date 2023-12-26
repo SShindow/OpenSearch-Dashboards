@@ -54,26 +54,26 @@ export class VisAugmenterPlugin
       core.uiSettings.register({
         [PLUGIN_AUGMENTATION_ENABLE_SETTING]: {
           name: i18n.translate('visualization.enablePluginAugmentationTitle', {
-            defaultMessage: 'Enable plugin augmentation',
+            defaultMessage: 'Kích hoạt tính năng tăng cường plugin',
           }),
           value: true,
           description: i18n.translate('visualization.enablePluginAugmentationText', {
-            defaultMessage: 'Plugin functionality can be accessed from line chart visualizations',
+            defaultMessage: 'Chức năng plugin có thể được truy cập từ trực quan biểu đồ đường',
           }),
           category: ['visualization'],
           schema: schema.boolean(),
         },
         [PLUGIN_AUGMENTATION_MAX_OBJECTS_SETTING]: {
           name: i18n.translate('visualization.enablePluginAugmentation.maxPluginObjectsTitle', {
-            defaultMessage: 'Max number of associated augmentations',
+            defaultMessage: 'Số lần tăng cường liên quan tối đa',
           }),
           value: 10,
           description: i18n.translate(
             'visualization.enablePluginAugmentation.maxPluginObjectsText',
             {
               defaultMessage:
-                'Associating more than 10 plugin resources per visualization can lead to performance ' +
-                'issues and increase the cost of running clusters.',
+                'Việc liên kết hơn 10 tài nguyên plugin cho mỗi lần hiển thị ' +
+                'có thể dẫn đến các vấn đề về hiệu suất và tăng chi phí chạy cụm.',
             }
           ),
           category: ['visualization'],

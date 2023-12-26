@@ -37,22 +37,22 @@ import { DIMMING_OPACITY_SETTING, HEATMAP_MAX_BUCKETS_SETTING } from '../common'
 export const uiSettings: Record<string, UiSettingsParams> = {
   [DIMMING_OPACITY_SETTING]: {
     name: i18n.translate('visTypeVislib.advancedSettings.visualization.dimmingOpacityTitle', {
-      defaultMessage: 'Dimming opacity',
+      defaultMessage: 'Giảm độ mờ',
     }),
     value: 0.5,
     type: 'number',
     description: i18n.translate('visTypeVislib.advancedSettings.visualization.dimmingOpacityText', {
       defaultMessage:
-        'The opacity of the chart items that are dimmed when highlighting another element of the chart. ' +
-        'The lower this number, the more the highlighted element will stand out. ' +
-        'This must be a number between 0 and 1.',
+        'Độ mờ của các mục biểu đồ bị mờ khi làm nổi bật phần tử khác của biểu đồ. ' +
+        'Con số này càng thấp thì phần tử được đánh dấu sẽ càng nổi bật. ' +
+        'Đây phải là một số từ 0 đến 1.',
     }),
     category: ['visualization'],
     schema: schema.number(),
   },
   [HEATMAP_MAX_BUCKETS_SETTING]: {
     name: i18n.translate('visTypeVislib.advancedSettings.visualization.heatmap.maxBucketsTitle', {
-      defaultMessage: 'Heatmap maximum buckets',
+      defaultMessage: 'Nhóm tối đa của bản đồ nhiệt',
     }),
     value: 50,
     type: 'number',
@@ -60,8 +60,8 @@ export const uiSettings: Record<string, UiSettingsParams> = {
       'visTypeVislib.advancedSettings.visualization.heatmap.maxBucketsText',
       {
         defaultMessage:
-          'The maximum number of buckets a single datasource can return. ' +
-          'A higher number might have negative impact on browser rendering performance',
+          'Số lượng nhóm tối đa mà một nguồn dữ liệu có thể trả về. ' +
+          'Con số cao hơn có thể có tác động tiêu cực đến hiệu suất hiển thị của trình duyệt',
       }
     ),
     category: ['visualization'],

@@ -64,7 +64,7 @@ const sectionTip = i18n.translate('management.sections.section.tip', {
 });
 
 const opensearchDashboardsTitle = i18n.translate('management.sections.opensearchDashboardsTitle', {
-  defaultMessage: 'Dashboards Management',
+  defaultMessage: 'Quản lý trang tổng quan',
 });
 
 const opensearchDashboardsTip = i18n.translate('management.sections.opensearchDashboardsTip', {
@@ -72,7 +72,7 @@ const opensearchDashboardsTip = i18n.translate('management.sections.opensearchDa
 });
 
 const stackTitle = i18n.translate('management.sections.stackTitle', {
-  defaultMessage: 'Stack',
+  defaultMessage: 'Xếp chồng',
 });
 
 const stackTip = i18n.translate('management.sections.stackTip', {

@@ -113,13 +113,13 @@ export default class ApplyFiltersPopoverContent extends Component<Props, State> 
           <EuiButtonEmpty onClick={this.props.onCancel}>
             <FormattedMessage
               id="data.filter.applyFiltersPopup.cancelButtonLabel"
-              defaultMessage="Cancel"
+              defaultMessage="Hủy bỏ"
             />
           </EuiButtonEmpty>
           <EuiButton onClick={this.onSubmit} data-test-subj="applyFiltersPopoverButton" fill>
             <FormattedMessage
               id="data.filter.applyFiltersPopup.saveButtonLabel"
-              defaultMessage="Apply"
+              defaultMessage="Áp dụng"
             />
           </EuiButton>
         </EuiModalFooter>

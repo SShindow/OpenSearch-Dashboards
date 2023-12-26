@@ -61,7 +61,7 @@ export function couchbaseMetricsSpecProvider(context: TutorialContext): Tutorial
     artifacts: {
       application: {
         label: i18n.translate('home.tutorials.couchbaseMetrics.artifacts.application.label', {
-          defaultMessage: 'Discover',
+          defaultMessage: 'Khám phá',
         }),
         path: '/app/discover#/',
       },

@@ -759,7 +759,7 @@ export class Flyout extends Component<FlyoutProps, FlyoutState> {
             initialPromptText={
               <FormattedMessage
                 id="savedObjectsManagement.objectsTable.flyout.importPromptText"
-                defaultMessage="Import"
+                defaultMessage="Nhập"
               />
             }
             onChange={this.setImportFile}
@@ -817,7 +817,7 @@ export class Flyout extends Component<FlyoutProps, FlyoutState> {
         >
           <FormattedMessage
             id="savedObjectsManagement.objectsTable.flyout.import.confirmButtonLabel"
-            defaultMessage="Import"
+            defaultMessage="Nhập"
           />
         </EuiButton>
       );

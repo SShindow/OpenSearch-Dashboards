@@ -33,7 +33,7 @@ export function ManagementOverviewWrapper(props: ManagementOverviewProps) {
       <EuiPageBody component="main">
         <EuiTitle size="l">
           <h1>
-            <FormattedMessage id="management.overview.overviewTitle" defaultMessage="Overview" />
+            <FormattedMessage id="management.overview.overviewTitle" defaultMessage="Tổng quan" />
           </h1>
         </EuiTitle>
         <EuiSpacer />

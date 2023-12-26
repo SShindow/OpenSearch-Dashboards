@@ -45,10 +45,10 @@ export class ManagementOverViewPlugin
       home.featureCatalogue.register({
         id: MANAGEMENT_OVERVIEW_PLUGIN_ID,
         title: i18n.translate('management.stackManagement.managementLabel', {
-          defaultMessage: 'Management',
+          defaultMessage: 'Quản lý',
         }),
         description: i18n.translate('management.stackManagement.managementDescription', {
-          defaultMessage: 'Your center location for managing the OpenSearch Stack.',
+          defaultMessage: 'Bảng điều khiển trung tâm của bạn để quản lý OpenSearch.',
         }),
         icon: 'managementApp',
         path: `/app/${MANAGEMENT_OVERVIEW_PLUGIN_ID}`,
@@ -60,7 +60,7 @@ export class ManagementOverViewPlugin
     application.register({
       id: MANAGEMENT_OVERVIEW_PLUGIN_ID,
       title: i18n.translate('management.overview.overviewTitle', {
-        defaultMessage: 'Overview',
+        defaultMessage: 'Tổng quan',
       }),
       icon: '/ui/logos/opensearch_mark.svg',
       order: 9000,

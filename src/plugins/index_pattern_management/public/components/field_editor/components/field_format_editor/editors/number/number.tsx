@@ -59,7 +59,7 @@ export class NumberFormatEditor extends DefaultFormatEditor<NumberFormatEditorPa
           label={
             <FormattedMessage
               id="indexPatternManagement.number.numeralLabel"
-              defaultMessage="Numeral.js format pattern (Default: {defaultPattern})"
+              defaultMessage="Mẫu định dạng Numeral.js (Mặc định: {defaultPattern})"
               values={{ defaultPattern: <EuiCode>{defaultPattern}</EuiCode> }}
             />
           }
@@ -68,7 +68,7 @@ export class NumberFormatEditor extends DefaultFormatEditor<NumberFormatEditorPa
               <EuiLink target="_blank" href="https://adamwdraper.github.io/Numeral-js/">
                 <FormattedMessage
                   id="indexPatternManagement.number.documentationLabel"
-                  defaultMessage="Documentation"
+                  defaultMessage="Tài liệu"
                 />
                 &nbsp;
                 <EuiIcon type="link" />

@@ -95,7 +95,7 @@ const overwriteDisabled = {
 };
 const importOptionsTitle = i18n.translate(
   'savedObjectsManagement.objectsTable.importModeControl.importOptionsTitle',
-  { defaultMessage: 'Import options' }
+  { defaultMessage: 'Tùy chọn thêm' }
 );
 
 const createLabel = ({ text, tooltip }: { text: string; tooltip: string }) => (

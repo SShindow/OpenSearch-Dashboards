@@ -38,14 +38,14 @@ export class ChartsServerPlugin implements Plugin<object, object> {
     core.uiSettings.register({
       [COLOR_MAPPING_SETTING]: {
         name: i18n.translate('charts.advancedSettings.visualization.colorMappingTitle', {
-          defaultMessage: 'Color mapping',
+          defaultMessage: 'Ánh xạ màu',
         }),
         value: JSON.stringify({
           Count: '#54B399',
         }),
         type: 'json',
         description: i18n.translate('charts.advancedSettings.visualization.colorMappingText', {
-          defaultMessage: 'Maps values to specified colors within visualizations',
+          defaultMessage: 'Ánh xạ các giá trị tới các màu được chỉ định trong trực quan',
         }),
         category: ['visualization'],
         schema: schema.string(),

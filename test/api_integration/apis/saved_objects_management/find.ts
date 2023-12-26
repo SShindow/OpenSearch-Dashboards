@@ -285,7 +285,7 @@ export default function ({ getService }: FtrProviderContext) {
             });
             expect(resp.body.saved_objects[1].meta).to.eql({
               icon: 'visualizeApp',
-              title: 'Visualization',
+              title: 'Trực quan',
               editUrl:
                 '/management/opensearch-dashboards/objects/savedVisualizations/add810b0-3224-11e8-a572-ffca06da1357',
               inAppUrl: {

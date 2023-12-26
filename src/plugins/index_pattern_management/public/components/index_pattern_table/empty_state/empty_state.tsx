@@ -113,13 +113,13 @@ export const EmptyState = ({
     <EuiText color="subdued" textAlign="center" size="xs">
       <FormattedMessage
         id="indexPatternManagement.createIndexPattern.emptyState.createAnyway"
-        defaultMessage="Some indices may be hidden. Try to {link} anyway."
+        defaultMessage="Một số chỉ số có thể bị ẩn. Thử {link}."
         values={{
           link: (
             <EuiLink {...reactRouterNavigate(useHistory(), 'create')} data-test-subj="createAnyway">
               <FormattedMessage
                 id="indexPatternManagement.createIndexPattern.emptyState.createAnywayLink"
-                defaultMessage="create an index pattern"
+                defaultMessage="tạo một mẫu chỉ mục"
               />
             </EuiLink>
           ),
@@ -142,7 +142,7 @@ export const EmptyState = ({
               <h2>
                 <FormattedMessage
                   id="indexPatternManagement.createIndexPattern.emptyState.noDataTitle"
-                  defaultMessage="Ready to try OpenSearch Dashboards? First, you need data."
+                  defaultMessage="Bạn đã sẵn sàng dùng thử Bảng điều khiển OpenSearch chưa? Đầu tiên, bạn cần dữ liệu."
                 />
               </h2>
             </EuiTitle>
@@ -180,13 +180,13 @@ export const EmptyState = ({
                 title={
                   <FormattedMessage
                     id="indexPatternManagement.createIndexPattern.emptyState.sampleDataCardTitle"
-                    defaultMessage="Add sample data"
+                    defaultMessage="Thêm dữ liệu mẫu"
                   />
                 }
                 description={
                   <FormattedMessage
                     id="indexPatternManagement.createIndexPattern.emptyState.sampleDataCardDescription"
-                    defaultMessage="Load a data set and a OpenSearch Dashboards dashboard."
+                    defaultMessage="Tải tập dữ liệu và trang tổng quan OpenSearch Dashboards."
                   />
                 }
               />
@@ -202,7 +202,7 @@ export const EmptyState = ({
                       title: (
                         <FormattedMessage
                           id="indexPatternManagement.createIndexPattern.emptyState.learnMore"
-                          defaultMessage="Want to learn more?"
+                          defaultMessage="Muốn tìm hiểu thêm?"
                         />
                       ),
                       description: (
@@ -213,7 +213,7 @@ export const EmptyState = ({
                         >
                           <FormattedMessage
                             id="indexPatternManagement.createIndexPattern.emptyState.readDocs"
-                            defaultMessage="Read documentation"
+                            defaultMessage="Đọc tài liệu"
                           />
                         </EuiLink>
                       ),
@@ -228,14 +228,14 @@ export const EmptyState = ({
                       title: (
                         <FormattedMessage
                           id="indexPatternManagement.createIndexPattern.emptyState.haveData"
-                          defaultMessage="Think you already have data?"
+                          defaultMessage="Nghĩ rằng bạn đã có dữ liệu?"
                         />
                       ),
                       description: (
                         <EuiLink onClick={onRefresh} data-test-subj="refreshIndicesButton">
                           <FormattedMessage
                             id="indexPatternManagement.createIndexPattern.emptyState.checkDataButton"
-                            defaultMessage="Check for new data"
+                            defaultMessage="Kiểm tra dữ liệu mới"
                           />{' '}
                           <EuiIcon type="refresh" size="s" />
                         </EuiLink>
